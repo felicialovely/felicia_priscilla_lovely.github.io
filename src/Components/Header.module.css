@@ -1,0 +1,36 @@
+.DivProfilePic{
+    /* max-width: 40%; */
+    height: auto;
+    z-index: 1;
+    /* position: absolute; */
+    left: 0;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    display: flex;
+}
+
+.ProfilePic{
+    max-width: 40%;
+    height: auto;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.GridHeader{
+    grid-template-columns: 40% 60%;
+    display: grid;
+}
+
+@media only screen and (max-width: 600px) {
+    .GridHeader{
+        grid-template-columns: 100%;
+        display: grid;
+    }
+    .Social{
+      visibility: hidden !important;
+    }
+}
