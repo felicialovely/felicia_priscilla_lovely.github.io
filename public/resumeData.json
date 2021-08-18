@@ -1,0 +1,184 @@
+{
+  "main": {
+    "name": "Let's build awesome technology together!",
+    "description": "I am a Software Developer, especially in Front End Developer. I believe software is a great combination between artistry and engineering. Let's see how I can tell you about me first, feel free to check my resume website!",
+    "image": "1.png",
+    "profile_photo": "Untitled design.png",
+    "bio": "Hi! I am Felicia. I love to learning something new and discover new experiences about software development. Creativity in technology and building useful technology is my passion. I believe that hard work and creativity while building technology will produce a better and useful technology.",
+    "contactmessage": "Feel free to get in touch with me by filling the form below.",
+    "email": "feliciapriscillalovely.fpl@gmail.com",
+    "phone": "+6285765558518",
+    "github": "https://github.com/felicialovely",
+    "linkedin": "https://www.linkedin.com/in/felicia-priscilla-lovely/",
+    "resumedownload": "https://drive.google.com/file/d/1XLW98-gYjClTAySE6Amj0zIQ3vGHW5s1/view?usp=sharing",
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/felicia-priscilla-lovely/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "http://instagram.com/felicia_priscilla_lovely",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/felicialovely",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "education": [
+      {
+        "school": "Universitas Multimedia Nusantara",
+        "degree": "Bachelor Degree in Informatics",
+        "graduated": "May 2020",
+        "description": "I took Informatics Major in Universitas Multimedia Nusantara. It is located in Tangerang, Indonesia. In there, I studied about the basic of algorithm and programming using C, the basic of data structure using C++, and object oriented programming using C++. I learnt about website development using javascript, php, css and learnt the Code Igniter framework for web programming. I also learnt about android application development using Android Studio using Java programming language. I learnt about cross platform application too, using Ionic framework combined with Angular JS. In the other hand, I also learnt about database using MySQL, Machine Learning coded using python, and computer networking."
+      },
+      {
+        "school": "Don Bosco Padang Senior High School",
+        "degree": "Senior High School with Science Major",
+        "graduated": "2016",
+        "description": "I went to Don Bosco Padang Senior High School is located in my hometown, Padang, West Sumatera. During my senior high school, I took Science Major. Due to 2013's curriculum, students were given choices to had two electives during first year, and one elective during second and third year. In my first year, I choosed Japanese language and accounting. Then, I choosed accounting for my elective."
+      },
+      {
+        "school": "Maria Padang Junior High School",
+        "degree": "Junior High School",
+        "graduated": "2013",
+        "description": "During my junior high school, I took an acceleration class that made me graduate in two years only."
+      }
+    ],
+    "work": [
+      {
+        "company": "Nexsoft/ PT Paramadaksa Teknologi Nusantara",
+        "title": "Front End Developer",
+        "years": "May 2021 - Present",
+        "description": "Building Front End of an application that implements Single Page Application (SPA), using React.Js, while the design is styled using CSS and Ant Design Library."
+      },
+      {
+        "company": "Nexsoft/ PT Paramadaksa Teknologi Nusantara",
+        "title": "Back End Developer",
+        "years": "January - May 2021",
+        "description": "Building and developing API using Go Programming Language."
+      },
+      {
+        "company": "Nexsoft/ PT Paramadaksa Teknologi Nusantara",
+        "title": "Full Stack Developer",
+        "years": "May - December 2020",
+        "description": "Developing web application using Java and Java Server Page (JSP)."
+      },
+      {
+        "company": "PT Datacaraka Solusindo",
+        "title": "Full Stack Developer Intern",
+        "years": "June - September 2019",
+        "description": "Building web application using PHP and JavaScript."
+      }
+    ],
+    "skills": [
+      {
+        "name": "Javascript",
+        "level": "85%"
+      },
+      {
+        "name": "CSS",
+        "level": "85%"
+      },
+      {
+        "name": "React.js",
+        "level": "80%"
+      },
+      {
+        "name": "Ant Design",
+        "level": "80%"
+      },
+      {
+        "name": "Bootstrap",
+        "level": "75%"
+      },
+      {
+        "name": "Node.js",
+        "level": "80%"
+      },
+      {
+        "name": "Angular JS",
+        "level": "65%"
+      },
+      {
+        "name": "Typescript",
+        "level": "65%"
+      },
+      {
+        "name": "Java",
+        "level": "85%"
+      },
+      {
+        "name": "Golang",
+        "level": "75%"
+      },
+      {
+        "name": "PHP",
+        "level": "85%"
+      },
+      {
+        "name": "C++",
+        "level": "85%"
+      },
+      {
+        "name": "C#",
+        "level": "80%"
+      },
+      {
+        "name": "MySQL",
+        "level": "85%"
+      },
+      {
+        "name": "PostgreSQL",
+        "level": "85%"
+      },
+      {
+        "name": "Postman API",
+        "level": "90%"
+      },
+      {
+        "name": "Spring",
+        "level": "75%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Movie Database",
+        "description": "Website for movie list and detail for final semester project",
+        "image": "movie.png",
+        "url": "https://github.com/felicialovely/UASPTI-TheMovieDatabase"
+      },
+      {
+        "title": "Whizzie",
+        "description": "E-commerce website for group final semester project",
+        "image": "whizzie.png",
+        "url": "https://github.com/karissaa/WhizzieWeb"
+      },
+      {
+        "title": "Resume and Game",
+        "description": "A final semester project contains of personal resume and game inside portfolio section",
+        "image": "millionaire.PNG",
+        "url": "http://www.timbakerdev.com"
+      },
+      {
+        "title": "Twistagram",
+        "description": "Social media website for group mid semester project",
+        "image": "twistagram.PNG",
+        "url": "https://github.com/karissaa/Twistagram"
+      },
+      {
+        "title": "Numbers Counting with Roosevelt",
+        "description": "An interactive book for learning about counting numbers, for group final semester project",
+        "image": "roosevelt.png",
+        "url": "https://github.com/felicialovely/uasmobile"
+      }
+    ]
+  }
+}
