@@ -78,10 +78,10 @@ class Header extends Component {
             <div style={{display:"flex", alignItems:"center"}}>
               <div className="banner-text">
                 <Fade bottom>
-                  <h1 className="responsive-headline">{name}</h1>
+                  <h1 className={style.Name}>{name}</h1>
                 </Fade>
                 <Fade bottom duration={1200}>
-                  <h3>{description}.</h3>
+                  <h3 className={style.Description}>{description}</h3>
                 </Fade>
                 <hr />
                 <Fade bottom duration={2000}>
