@@ -25,6 +25,10 @@
     display: grid;
 }
 
+.Name{
+    font-size: 70px !important;
+}
+
 @media only screen and (max-width: 600px) {
     .GridHeader{
         grid-template-columns: 100%;
@@ -32,5 +36,11 @@
     }
     .Social{
       visibility: hidden !important;
+    }
+    .Name{
+        font-size: 7vw !important;
+    }
+    .Description{
+        font-size: 3vw !important;
     }
 }
