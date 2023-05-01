@@ -3,9 +3,9 @@ import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
 import { Row, Col } from 'antd';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-import { getChildrenToRender } from './utils';
+import { getChildrenToRender } from '../../../../libraries/utils';
 
-class Content3 extends React.PureComponent {
+class Knowledge extends React.PureComponent {
   getDelay = (e, b) => (e % b) * 100 + Math.floor(e / b) * 100 + b * 100;
 
   render() {
@@ -91,4 +91,4 @@ class Content3 extends React.PureComponent {
   }
 }
 
-export default Content3;
+export default Knowledge;

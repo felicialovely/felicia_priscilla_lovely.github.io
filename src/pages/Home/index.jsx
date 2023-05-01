@@ -3,19 +3,23 @@
 import React from 'react';
 import { enquireScreen } from 'enquire-js';
 
-import Banner0 from './Banner0';
-import Content1 from './Content1';
-import Content3 from './Content3';
-import Content5 from './Content5';
-import Content11 from './Content11';
+import Navigation from '@components/Navigation';
+import Banner from './components/Banner';
+import Intro from './components/Intro';
+import Knowledge from './components/Knowledge';
+import Portfolio from './components/Portfolio';
+import ContactMe from '@components/ContactMe';
+import Footer from '@components/Footer';
 
 import {
-  Banner00DataSource,
+  NavDataSource,
+  BannerDataSource,
   Content10DataSource,
-  Content30DataSource,
-  Content50DataSource,
-  Content110DataSource,
-} from './data.source';
+  IntroDataSource,
+  KnowledgeDataSource,
+  PortfolioDataSource,
+  FooterDataSource,
+} from '../../libraries/data.source';
 import './less/antMotionStyle.less';
 
 let isMobile;
@@ -54,34 +58,46 @@ export default class Home extends React.Component {
 
   render() {
     const children = [
-      <Banner0
-        id="Banner0_0"
-        key="Banner0_0"
-        dataSource={Banner00DataSource}
+      <Navigation
+        id="Nav3_0"
+        key="Nav3_0"
+        dataSource={NavDataSource}
         isMobile={this.state.isMobile}
       />,
-      <Content1
+      <Banner
+        id="Banner0_0"
+        key="Banner0_0"
+        dataSource={BannerDataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <Intro
         id="Content1_0"
         key="Content1_0"
         dataSource={Content10DataSource}
         isMobile={this.state.isMobile}
       />,
-      <Content3
+      <Knowledge
         id="Content3_0"
         key="Content3_0"
-        dataSource={Content30DataSource}
+        dataSource={IntroDataSource}
         isMobile={this.state.isMobile}
       />,
-      <Content5
+      <Portfolio
         id="Content5_0"
         key="Content5_0"
-        dataSource={Content50DataSource}
+        dataSource={KnowledgeDataSource}
         isMobile={this.state.isMobile}
       />,
-      <Content11
+      <ContactMe
         id="Content11_0"
         key="Content11_0"
-        dataSource={Content110DataSource}
+        dataSource={PortfolioDataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <Footer
+        id="Footer2_0"
+        key="Footer2_0"
+        dataSource={FooterDataSource}
         isMobile={this.state.isMobile}
       />,
     ];

@@ -1,11 +1,11 @@
 import React from 'react';
 import TweenOne from 'rc-tween-one';
 import { Menu } from 'antd';
-import { getChildrenToRender } from './utils';
+import { getChildrenToRender } from '../../libraries/utils';
 
 const { Item, SubMenu } = Menu;
 
-class Header3 extends React.Component {
+class Navigation extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -133,4 +133,4 @@ class Header3 extends React.Component {
   }
 }
 
-export default Header3;
+export default Navigation;

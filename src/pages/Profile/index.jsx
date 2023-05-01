@@ -3,14 +3,18 @@
 import React from 'react';
 import { enquireScreen } from 'enquire-js';
 
+import Nav3 from './Nav3';
 import Teams0 from './Teams0';
 import Content9 from './Content9';
 import Content11 from './Content11';
+import Footer2 from './Footer2';
 
 import {
+  NavDataSource,
   Teams00DataSource,
   Content90DataSource,
-  Content110DataSource,
+  PortfolioDataSource,
+  FooterDataSource,
 } from './data.source';
 import './less/antMotionStyle.less';
 
@@ -50,6 +54,12 @@ export default class Profile extends React.Component {
 
   render() {
     const children = [
+      <Nav3
+        id="Nav3_0"
+        key="Nav3_0"
+        dataSource={NavDataSource}
+        isMobile={this.state.isMobile}
+      />,
       <Teams0
         id="Teams0_0"
         key="Teams0_0"
@@ -65,7 +75,13 @@ export default class Profile extends React.Component {
       <Content11
         id="Content11_0"
         key="Content11_0"
-        dataSource={Content110DataSource}
+        dataSource={PortfolioDataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <Footer2
+        id="Footer2_0"
+        key="Footer2_0"
+        dataSource={FooterDataSource}
         isMobile={this.state.isMobile}
       />,
     ];

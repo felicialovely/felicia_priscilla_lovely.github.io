@@ -1,5 +1,5 @@
 // import React from 'react';
-export const Nav00DataSource = {
+export const NavDataSource = {
   wrapper: { className: 'header3 home-page-wrapper' },
   page: { className: 'home-page' },
   logo: {
@@ -98,7 +98,7 @@ export const Nav00DataSource = {
   },
   mobileMenu: { className: 'header3-mobile-menu' },
 };
-export const Banner00DataSource = {
+export const BannerDataSource = {
   wrapper: { className: 'banner0 lh2zqh8ajvq-editor_css' },
   textWrapper: { className: 'banner0-text-wrapper' },
   title: {
@@ -126,7 +126,7 @@ export const Content10DataSource = {
       '云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。',
   },
 };
-export const Content30DataSource = {
+export const IntroDataSource = {
   wrapper: { className: 'home-page-wrapper content3-wrapper' },
   page: { className: 'home-page content3' },
   OverPack: { playScale: 0.3 },
@@ -271,7 +271,7 @@ export const Content30DataSource = {
     ],
   },
 };
-export const Content50DataSource = {
+export const KnowledgeDataSource = {
   wrapper: { className: 'home-page-wrapper content5-wrapper' },
   page: { className: 'home-page content5' },
   OverPack: { playScale: 0.3, className: '' },
@@ -405,7 +405,7 @@ export const Content50DataSource = {
     ],
   },
 };
-export const Content110DataSource = {
+export const PortfolioDataSource = {
   OverPack: {
     className: 'home-page-wrapper content11-wrapper',
     playScale: 0.3,

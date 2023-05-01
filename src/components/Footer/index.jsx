@@ -1,9 +1,9 @@
 import React from 'react';
 import TweenOne from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-import { isImg } from './utils';
+import { isImg } from '../../libraries/utils';
 
-class Footer2 extends React.PureComponent {
+class Footer extends React.PureComponent {
   render() {
     const { ...props } = this.props;
     const { dataSource } = props;
@@ -45,4 +45,4 @@ class Footer2 extends React.PureComponent {
   }
 }
 
-export default Footer2;
+export default Footer;

@@ -1,6 +1,15 @@
 const { override, fixBabelImports, addLessLoader, adjustStyleLoaders } = require('customize-cra');
+const path = require('path');
 
 module.exports = override(
+  function addAliases(config) {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@components': path.resolve(__dirname, 'src/components'),
+      '@libraries': path.resolve(__dirname, 'src/libraries'),
+    };
+    return config;
+  },
   // Load antd
   fixBabelImports('import', {
     libraryName: 'antd',

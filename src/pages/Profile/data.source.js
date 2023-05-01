@@ -1,5 +1,4 @@
-import React from 'react';
-export const Nav00DataSource = {
+export const NavDataSource = {
   wrapper: { className: 'header3 home-page-wrapper' },
   page: { className: 'home-page' },
   logo: {
@@ -263,7 +262,7 @@ export const Content90DataSource = {
     ],
   },
 };
-export const Content110DataSource = {
+export const PortfolioDataSource = {
   OverPack: {
     className: 'home-page-wrapper content11-wrapper',
     playScale: 0.3,

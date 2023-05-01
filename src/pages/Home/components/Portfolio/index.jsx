@@ -2,9 +2,9 @@ import React from 'react';
 import { Row, Col } from 'antd';
 import { TweenOneGroup } from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-import { getChildrenToRender } from './utils';
+import { getChildrenToRender } from '../../../../libraries/utils';
 
-class Content5 extends React.PureComponent {
+class Portfolio extends React.PureComponent {
   getChildrenToRender = (data) =>
     data.map((item) => {
       return (
@@ -58,4 +58,4 @@ class Content5 extends React.PureComponent {
   }
 }
 
-export default Content5;
+export default Portfolio;

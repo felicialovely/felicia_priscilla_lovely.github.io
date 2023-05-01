@@ -4,7 +4,7 @@ import TweenOne from 'rc-tween-one';
 import { Row, Col } from 'antd';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 
-function Content1(props) {
+function Intro(props) {
   const { ...tagProps } = props;
   const { dataSource, isMobile } = tagProps;
   delete tagProps.dataSource;
@@ -67,4 +67,4 @@ function Content1(props) {
   );
 }
 
-export default Content1;
+export default Intro;
