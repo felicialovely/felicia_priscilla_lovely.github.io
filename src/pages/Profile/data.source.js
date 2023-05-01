@@ -1,5 +1,5 @@
 import React from 'react';
-export const Nav30DataSource = {
+export const Nav00DataSource = {
   wrapper: { className: 'header3 home-page-wrapper' },
   page: { className: 'home-page' },
   logo: {
@@ -296,7 +296,7 @@ export const Content110DataSource = {
     children: { a: { className: 'button', href: '#', children: '立即报名' } },
   },
 };
-export const Footer20DataSource = {
+export const FooterDataSource = {
   wrapper: { className: 'home-page-wrapper footer2-wrapper' },
   OverPack: { className: 'home-page footer2', playScale: 0.05 },
   copyright: {

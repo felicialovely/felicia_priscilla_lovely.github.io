@@ -3,18 +3,14 @@
 import React from 'react';
 import { enquireScreen } from 'enquire-js';
 
-import Nav3 from './Nav3';
 import Teams0 from './Teams0';
 import Content9 from './Content9';
 import Content11 from './Content11';
-import Footer2 from './Footer2';
 
 import {
-  Nav30DataSource,
   Teams00DataSource,
   Content90DataSource,
   Content110DataSource,
-  Footer20DataSource,
 } from './data.source';
 import './less/antMotionStyle.less';
 
@@ -25,7 +21,7 @@ enquireScreen((b) => {
 
 const { location = {} } = typeof window !== 'undefined' ? window : {};
 
-export default class Home extends React.Component {
+export default class Profile extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -54,12 +50,6 @@ export default class Home extends React.Component {
 
   render() {
     const children = [
-      <Nav3
-        id="Nav3_0"
-        key="Nav3_0"
-        dataSource={Nav30DataSource}
-        isMobile={this.state.isMobile}
-      />,
       <Teams0
         id="Teams0_0"
         key="Teams0_0"
@@ -76,12 +66,6 @@ export default class Home extends React.Component {
         id="Content11_0"
         key="Content11_0"
         dataSource={Content110DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Footer2
-        id="Footer2_0"
-        key="Footer2_0"
-        dataSource={Footer20DataSource}
         isMobile={this.state.isMobile}
       />,
     ];
