@@ -3,8 +3,6 @@ import { Button } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
-import { isImg } from '../../../../libraries/utils';
-
 class Banner extends React.PureComponent {
   render() {
     const { ...currentProps } = this.props;
@@ -20,12 +18,7 @@ class Banner extends React.PureComponent {
           {...dataSource.textWrapper}
         >
           <div key="title" {...dataSource.title}>
-            {typeof dataSource.title.children === 'string' &&
-            dataSource.title.children.match(isImg) ? (
-              <img src={dataSource.title.children} width="100%" alt="img" />
-            ) : (
-              dataSource.title.children
-            )}
+            <img src={dataSource.title.children} width="100%" alt="img" />
           </div>
           <div key="content" {...dataSource.content}>
             {dataSource.content.children}
@@ -41,7 +34,7 @@ class Banner extends React.PureComponent {
             repeat: -1,
             duration: 1000,
           }}
-          className="banner0-icon"
+          className="banner-icon"
           key="icon"
         >
           <DownOutlined />

@@ -1,6 +1,6 @@
-@header3: header3;
+@header: header;
 
-.@{header3} {
+.@{header} {
   background: #fff;
   width: 100%;
   z-index: 1;
@@ -97,7 +97,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .@{header3} {
+  .@{header} {
     &-logo {
       z-index: 101;
     }
@@ -169,7 +169,7 @@
     & .open {
       height: auto;
 
-      .@{header3}-mobile-menu {
+      .@{header}-mobile-menu {
         em {
           &:nth-child(1) {
             transform: translateY(6px) rotate(45deg);
@@ -185,7 +185,7 @@
         }
       }
 
-      >.@{header3}-menu {
+      >.@{header}-menu {
         opacity: 1;
         pointer-events: auto;
       }

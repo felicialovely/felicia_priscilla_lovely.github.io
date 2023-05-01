@@ -5,7 +5,7 @@ import { getChildrenToRender } from './utils';
 
 const { Item, SubMenu } = Menu;
 
-class Header3 extends React.Component {
+class header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -34,12 +34,12 @@ class Header3 extends React.Component {
             title={
               <div
                 {...a}
-                className={`header3-item-block ${a.className}`.trim()}
+                className={`header-item-block ${a.className}`.trim()}
               >
                 {a.children.map(getChildrenToRender)}
               </div>
             }
-            popupClassName="header3-item-child"
+            popupClassName="header-item-child"
           >
             {subItem.map(($item, ii) => {
               const { children: childItem } = $item;
@@ -63,7 +63,7 @@ class Header3 extends React.Component {
       }
       return (
         <Item key={item.name} {...itemProps}>
-          <a {...a} className={`header3-item-block ${a.className}`.trim()}>
+          <a {...a} className={`header-item-block ${a.className}`.trim()}>
             {a.children.map(getChildrenToRender)}
           </a>
         </Item>
@@ -133,4 +133,4 @@ class Header3 extends React.Component {
   }
 }
 
-export default Header3;
+export default header;

@@ -9,21 +9,21 @@ class Navigation extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      phoneOpen: undefined,
+      phoneMenuOpen: undefined,
     };
   }
 
-  phoneClick = () => {
-    const phoneOpen = !this.state.phoneOpen;
+  phoneMenuClick = () => {
+    const phoneMenuOpen = !this.state.phoneMenuOpen;
     this.setState({
-      phoneOpen,
+      phoneMenuOpen,
     });
   };
 
   render() {
     const { dataSource, isMobile, ...props } = this.props;
-    const { phoneOpen } = this.state;
-    const navData = dataSource.Menu.children;
+    const { phoneMenuOpen } = this.state;
+    const navData = dataSource.menu.children;
     const navChildren = navData.map((item) => {
       const { children: a, subItem, ...itemProps } = item;
       if (subItem) {
@@ -34,12 +34,12 @@ class Navigation extends React.Component {
             title={
               <div
                 {...a}
-                className={`header3-item-block ${a.className}`.trim()}
+                className={`header-item-block ${a.className}`.trim()}
               >
                 {a.children.map(getChildrenToRender)}
               </div>
             }
-            popupClassName="header3-item-child"
+            popupClassName="header-item-child"
           >
             {subItem.map(($item, ii) => {
               const { children: childItem } = $item;
@@ -63,13 +63,15 @@ class Navigation extends React.Component {
       }
       return (
         <Item key={item.name} {...itemProps}>
-          <a {...a} className={`header3-item-block ${a.className}`.trim()}>
+          <a {...a} className={`header-item-block ${a.className}`.trim()}>
             {a.children.map(getChildrenToRender)}
           </a>
         </Item>
       );
     });
-    const moment = phoneOpen === undefined ? 300 : null;
+
+    const moment = phoneMenuOpen === undefined ? 300 : null;
+
     return (
       <TweenOne
         component="header"
@@ -79,7 +81,7 @@ class Navigation extends React.Component {
       >
         <div
           {...dataSource.page}
-          className={`${dataSource.page.className}${phoneOpen ? ' open' : ''}`}
+          className={`${dataSource.page.className}${phoneMenuOpen ? ' open' : ''}`}
         >
           <TweenOne
             animation={{ x: -30, type: 'from', ease: 'easeOutQuad' }}
@@ -91,7 +93,7 @@ class Navigation extends React.Component {
             <div
               {...dataSource.mobileMenu}
               onClick={() => {
-                this.phoneClick();
+                this.phoneMenuClick();
               }}
             >
               <em />
@@ -100,7 +102,7 @@ class Navigation extends React.Component {
             </div>
           )}
           <TweenOne
-            {...dataSource.Menu}
+            {...dataSource.menu}
             animation={
               isMobile
                 ? {
@@ -108,7 +110,7 @@ class Navigation extends React.Component {
                     height: 0,
                     duration: 300,
                     onComplete: (e) => {
-                      if (this.state.phoneOpen) {
+                      if (this.state.phoneMenuOpen) {
                         e.target.style.height = 'auto';
                       }
                     },
@@ -117,11 +119,11 @@ class Navigation extends React.Component {
                 : null
             }
             moment={moment}
-            reverse={!!phoneOpen}
+            reverse={!!phoneMenuOpen}
           >
             <Menu
               mode={isMobile ? 'inline' : 'horizontal'}
-              defaultSelectedKeys={['sub0']}
+              defaultSelectedKeys={['home']}
               theme="light"
             >
               {navChildren}

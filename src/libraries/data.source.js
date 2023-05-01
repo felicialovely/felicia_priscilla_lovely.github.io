@@ -1,115 +1,54 @@
-// import React from 'react';
 export const NavDataSource = {
-  wrapper: { className: 'header3 home-page-wrapper' },
+  wrapper: { className: 'header home-page-wrapper' },
   page: { className: 'home-page' },
   logo: {
-    className: 'header3-logo',
+    className: 'header-logo',
     children:
       'https://gw.alipayobjects.com/zos/basement_prod/b30cdc2a-d91c-4c78-be9c-7c63b308d4b3.svg',
   },
-  Menu: {
-    className: 'header3-menu',
+  menu: {
+    className: 'header-menu',
     children: [
       {
-        name: 'item0',
-        className: 'header3-item',
+        name: 'home',
+        className: 'header-item',
         children: {
-          href: '#',
-          children: [{ children: '导航一', name: 'text' }],
-        },
-        subItem: [
-          {
-            name: 'sub0',
-            className: 'item-sub',
-            children: {
-              className: 'item-sub-item',
-              children: [
-                {
-                  name: 'image0',
-                  className: 'item-image',
-                  children:
-                    'https://gw.alipayobjects.com/zos/rmsportal/ruHbkzzMKShUpDYMEmHM.svg',
-                },
-                {
-                  name: 'title',
-                  className: 'item-title',
-                  children: 'Ant Design',
-                },
-                {
-                  name: 'content',
-                  className: 'item-content',
-                  children: '企业级 UI 设计体系',
-                },
-              ],
-            },
-          },
-          {
-            name: 'sub1',
-            className: 'item-sub',
-            children: {
-              className: 'item-sub-item',
-              children: [
-                {
-                  name: 'image0',
-                  className: 'item-image',
-                  children:
-                    'https://gw.alipayobjects.com/zos/rmsportal/ruHbkzzMKShUpDYMEmHM.svg',
-                },
-                {
-                  name: 'title',
-                  className: 'item-title',
-                  children: 'Ant Design',
-                },
-                {
-                  name: 'content',
-                  className: 'item-content',
-                  children: '企业级 UI 设计体系',
-                },
-              ],
-            },
-          },
-        ],
-      },
-      {
-        name: 'item1',
-        className: 'header3-item',
-        children: {
-          href: '#',
-          children: [{ children: '导航二', name: 'text' }],
+          href: '/',
+          children: [{ children: 'Home', name: 'text' }],
         },
       },
       {
-        name: 'item2',
-        className: 'header3-item',
+        name: 'profile',
+        className: 'header-item',
         children: {
-          href: '#',
-          children: [{ children: '导航三', name: 'text' }],
+          href: 'profile',
+          children: [{ children: 'Profile', name: 'text' }],
         },
       },
       {
-        name: 'item3',
-        className: 'header3-item',
+        name: 'contact',
+        className: 'header-item',
         children: {
-          href: '#',
-          children: [{ children: '导航四', name: 'text' }],
+          href: 'contact',
+          children: [{ children: 'Contact', name: 'text' }],
         },
       },
     ],
   },
-  mobileMenu: { className: 'header3-mobile-menu' },
+  mobileMenu: { className: 'header-mobile-menu' },
 };
 export const BannerDataSource = {
-  wrapper: { className: 'banner0 lh2zqh8ajvq-editor_css' },
-  textWrapper: { className: 'banner0-text-wrapper' },
+  wrapper: { className: 'banner lh2zqh8ajvq-editor_css' },
+  textWrapper: { className: 'banner-text-wrapper' },
   title: {
-    className: 'banner0-title',
-    children: 'https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png',
+    className: 'banner-title',
+    children: './assets/logo.png',
   },
   content: {
-    className: 'banner0-content',
-    children: '一个高效的页面动画解决方案',
+    className: 'banner-content',
+    children: 'Felicia Lovely - Software Engineer',
   },
-  button: { className: 'banner0-button', children: 'Learn More' },
+  button: { className: 'banner-button', children: 'Learn More' },
 };
 export const Content10DataSource = {
   wrapper: { className: 'home-page-wrapper content1-wrapper' },

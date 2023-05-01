@@ -1,17 +1,17 @@
 export const NavDataSource = {
-  wrapper: { className: 'header3 home-page-wrapper' },
+  wrapper: { className: 'header home-page-wrapper' },
   page: { className: 'home-page' },
   logo: {
-    className: 'header3-logo',
+    className: 'header-logo',
     children:
       'https://gw.alipayobjects.com/zos/basement_prod/b30cdc2a-d91c-4c78-be9c-7c63b308d4b3.svg',
   },
   Menu: {
-    className: 'header3-menu',
+    className: 'header-menu',
     children: [
       {
         name: 'item0',
-        className: 'header3-item',
+        className: 'header-item',
         children: {
           href: '#',
           children: [{ children: '导航一', name: 'text' }],
@@ -71,7 +71,7 @@ export const NavDataSource = {
       },
       {
         name: 'item1',
-        className: 'header3-item',
+        className: 'header-item',
         children: {
           href: '#',
           children: [{ children: '导航二', name: 'text' }],
@@ -79,7 +79,7 @@ export const NavDataSource = {
       },
       {
         name: 'item2',
-        className: 'header3-item',
+        className: 'header-item',
         children: {
           href: '#',
           children: [{ children: '导航三', name: 'text' }],
@@ -87,7 +87,7 @@ export const NavDataSource = {
       },
       {
         name: 'item3',
-        className: 'header3-item',
+        className: 'header-item',
         children: {
           href: '#',
           children: [{ children: '导航四', name: 'text' }],
@@ -95,7 +95,7 @@ export const NavDataSource = {
       },
     ],
   },
-  mobileMenu: { className: 'header3-mobile-menu' },
+  mobileMenu: { className: 'header-mobile-menu' },
 };
 export const Teams00DataSource = {
   wrapper: { className: 'home-page-wrapper teams0-wrapper' },
