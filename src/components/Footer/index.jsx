@@ -1,7 +1,7 @@
 import React from 'react';
 import TweenOne from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-import { isImg } from '../../libraries/utils';
+import * as AntdIcons from '@ant-design/icons';
 
 class Footer extends React.PureComponent {
   render() {
@@ -14,31 +14,23 @@ class Footer extends React.PureComponent {
         <OverPack {...dataSource.OverPack}>
           <TweenOne {...dataSource.links}>
             {dataSource.links.children.map((item, i) => {
+              const Icon = AntdIcons[item.children]
               return (
                 <a key={i.toString()} {...item}>
-                  <img src={item.children} height="100%" alt="img" />
+                  <Icon />
                 </a>
               );
             })}
           </TweenOne>
-          <TweenOne
-            animation={{ x: '+=30', opacity: 0, type: 'from' }}
-            key="copyright"
-            {...dataSource.copyright}
-          >
+          <div {...dataSource.copyright}>
             {dataSource.copyright.children.map((item, i) =>
               React.createElement(
-                item.name.indexOf('title') === 0 ? 'h1' : 'div',
+                'div',
                 { key: i.toString(), ...item },
-                typeof item.children === 'string' && item.children.match(isImg)
-                  ? React.createElement('img', {
-                      src: item.children,
-                      alt: 'img',
-                    })
-                  : item.children
+                item.children
               )
             )}
-          </TweenOne>
+          </div>
         </OverPack>
       </div>
     );

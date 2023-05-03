@@ -7,14 +7,12 @@ import Nav3 from './Nav3';
 import Teams0 from './Teams0';
 import Content9 from './Content9';
 import Content11 from './Content11';
-import Footer2 from './Footer2';
 
 import {
   NavDataSource,
   Teams00DataSource,
   Content90DataSource,
   PortfolioDataSource,
-  FooterDataSource,
 } from './data.source';
 import './less/antMotionStyle.less';
 
@@ -76,12 +74,6 @@ export default class Profile extends React.Component {
         id="Content11_0"
         key="Content11_0"
         dataSource={PortfolioDataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Footer2
-        id="Footer2_0"
-        key="Footer2_0"
-        dataSource={FooterDataSource}
         isMobile={this.state.isMobile}
       />,
     ];

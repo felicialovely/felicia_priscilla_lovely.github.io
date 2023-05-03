@@ -87,7 +87,9 @@ class Navigation extends React.Component {
             animation={{ x: -30, type: 'from', ease: 'easeOutQuad' }}
             {...dataSource.logo}
           >
-            <img width="100%" src={dataSource.logo.children} alt="img" />
+            <a href={dataSource.logo.href}>
+              <img width="100%" src={dataSource.logo.children} alt="img" />
+            </a>
           </TweenOne>
           {isMobile && (
             <div

@@ -296,8 +296,8 @@ export const PortfolioDataSource = {
   },
 };
 export const FooterDataSource = {
-  wrapper: { className: 'home-page-wrapper footer2-wrapper' },
-  OverPack: { className: 'home-page footer2', playScale: 0.05 },
+  wrapper: { className: 'home-page-wrapper footer-wrapper' },
+  OverPack: { className: 'home-page footer', playScale: 0.05 },
   copyright: {
     className: 'copyright',
     children: [

@@ -1,8 +1,8 @@
-.footer2-wrapper {
-  background-color: #0d1a26;
+.footer-wrapper {
+  background-color: #a6c5d9;
   height: 80px;
   overflow: hidden;
-  .footer2 {
+  .footer {
     height: 100%;
     padding: 0 24px;
     line-height: 80px;
@@ -15,16 +15,8 @@
     >* {
       display: inline-block;
     }
-    &-logo {
-      width: 16px;
-      margin-right: 8px;
-      img {
-        width: 100%;
-      }
-    }
-    &-line {
-      padding: 0 12px;
-      margin: 0 12px;
+    &-text {
+      color: white;
     }
   }
   .links {
@@ -34,18 +26,24 @@
     height: 100%;
     a {
       height: 21px;
-      display: inline-block;
+      display: flex;
       margin-right: 32px;
-      img {
-        display: block;
+      span {
+        display: flex;
+        align-items: center;
+        svg {
+          height: 100%;
+          width: auto;
+          color: white;
+        }
       }
     }
   }
 }
 
 @media screen and (max-width: 767px) {
-  .footer2-wrapper {
-    .footer2 {
+  .footer-wrapper {
+    .footer {
       font-size: 12px;
       &.home-page {
         padding: 0;

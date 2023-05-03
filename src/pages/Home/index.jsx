@@ -95,8 +95,8 @@ export default class Home extends React.Component {
         isMobile={this.state.isMobile}
       />,
       <Footer
-        id="Footer2_0"
-        key="Footer2_0"
+        id="footer"
+        key="footer"
         dataSource={FooterDataSource}
         isMobile={this.state.isMobile}
       />,
