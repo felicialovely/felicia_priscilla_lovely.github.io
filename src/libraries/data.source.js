@@ -48,7 +48,7 @@ export const BannerDataSource = {
     className: 'banner-content',
     children: 'Felicia Lovely - Software Engineer',
   },
-  button: { className: 'banner-button', children: 'Learn More' },
+  button: { className: 'banner-button', children: 'View More' },
 };
 export const Content10DataSource = {
   wrapper: { className: 'home-page-wrapper content1-wrapper' },

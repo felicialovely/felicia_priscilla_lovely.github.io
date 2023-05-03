@@ -26,7 +26,7 @@ function Intro(props) {
         },
   };
   return (
-    <div {...tagProps} {...dataSource.wrapper}>
+    <div ref={props.targetRef} {...tagProps} {...dataSource.wrapper}>
       <OverPack {...dataSource.OverPack} component={Row}>
         <TweenOne
           key="img"

@@ -36,6 +36,7 @@ export default class Home extends React.Component {
       isMobile,
       show: !location.port, // 如果不是 dva 2.0 请删除
     };
+    this.targetRef = React.createRef();
   }
 
   componentDidMount() {
@@ -56,6 +57,10 @@ export default class Home extends React.Component {
     /* 如果不是 dva 2.0 请删除 end */
   }
 
+  goToIntro = () => {
+    this.targetRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   render() {
     const children = [
       <Navigation
@@ -69,10 +74,12 @@ export default class Home extends React.Component {
         key="banner_0"
         dataSource={BannerDataSource}
         isMobile={this.state.isMobile}
+        onButtonClick={this.goToIntro}
       />,
       <Intro
         id="Content1_0"
         key="Content1_0"
+        targetRef={this.targetRef}
         dataSource={Content10DataSource}
         isMobile={this.state.isMobile}
       />,
