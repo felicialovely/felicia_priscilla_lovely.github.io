@@ -14,10 +14,10 @@ import Footer from '@components/Footer';
 import {
   NavDataSource,
   BannerDataSource,
-  Content10DataSource,
   IntroDataSource,
   KnowledgeDataSource,
   PortfolioDataSource,
+  ContactDataSource,
   FooterDataSource,
 } from '../../libraries/data.source';
 import './less/antMotionStyle.less';
@@ -64,41 +64,41 @@ export default class Home extends React.Component {
   render() {
     const children = [
       <Navigation
-        id="Nav3_0"
-        key="Nav3_0"
+        id="nav"
+        key="nav"
         dataSource={NavDataSource}
         isMobile={this.state.isMobile}
       />,
       <Banner
-        id="banner_0"
-        key="banner_0"
+        id="banner"
+        key="banner"
         dataSource={BannerDataSource}
         isMobile={this.state.isMobile}
         onButtonClick={this.goToIntro}
       />,
       <Intro
-        id="Content1_0"
-        key="Content1_0"
+        id="intro"
+        key="intro"
         targetRef={this.targetRef}
-        dataSource={Content10DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Knowledge
-        id="Content3_0"
-        key="Content3_0"
         dataSource={IntroDataSource}
         isMobile={this.state.isMobile}
       />,
-      <Portfolio
-        id="Content5_0"
-        key="Content5_0"
+      <Knowledge
+        id="knowledge"
+        key="knowledge"
         dataSource={KnowledgeDataSource}
         isMobile={this.state.isMobile}
       />,
-      <ContactMe
-        id="Content11_0"
-        key="Content11_0"
+      <Portfolio
+        id="portfolio"
+        key="portfolio"
         dataSource={PortfolioDataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <ContactMe
+        id="contact-me"
+        key="contact-me"
+        dataSource={ContactDataSource}
         isMobile={this.state.isMobile}
       />,
       <Footer
@@ -115,9 +115,7 @@ export default class Home extends React.Component {
           this.dom = d;
         }}
       >
-        {/* 如果不是 dva 2.0 替换成 {children} start */}
         {this.state.show && children}
-        {/* 如果不是 dva 2.0 替换成 {children} end */}
       </div>
     );
   }

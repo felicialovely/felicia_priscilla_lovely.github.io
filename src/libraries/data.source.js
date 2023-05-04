@@ -50,7 +50,7 @@ export const BannerDataSource = {
   },
   button: { className: 'banner-button', children: 'View More' },
 };
-export const Content10DataSource = {
+export const IntroDataSource = {
   wrapper: { className: 'home-page-wrapper content1-wrapper' },
   OverPack: { className: 'home-page content1', playScale: 0.3 },
   imgWrapper: { className: 'content1-img', md: 10, xs: 24 },
@@ -65,7 +65,7 @@ export const Content10DataSource = {
       '云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。',
   },
 };
-export const IntroDataSource = {
+export const KnowledgeDataSource = {
   wrapper: { className: 'home-page-wrapper content3-wrapper' },
   page: { className: 'home-page content3' },
   OverPack: { playScale: 0.3 },
@@ -210,7 +210,7 @@ export const IntroDataSource = {
     ],
   },
 };
-export const KnowledgeDataSource = {
+export const PortfolioDataSource = {
   wrapper: { className: 'home-page-wrapper content5-wrapper' },
   page: { className: 'home-page content5' },
   OverPack: { playScale: 0.3, className: '' },
@@ -344,7 +344,7 @@ export const KnowledgeDataSource = {
     ],
   },
 };
-export const PortfolioDataSource = {
+export const ContactDataSource = {
   OverPack: {
     className: 'home-page-wrapper content11-wrapper',
     playScale: 0.3,

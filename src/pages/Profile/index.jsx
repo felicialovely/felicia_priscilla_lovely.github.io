@@ -53,8 +53,8 @@ export default class Profile extends React.Component {
   render() {
     const children = [
       <Nav3
-        id="Nav3_0"
-        key="Nav3_0"
+        id="nav"
+        key="nav"
         dataSource={NavDataSource}
         isMobile={this.state.isMobile}
       />,
@@ -71,8 +71,8 @@ export default class Profile extends React.Component {
         isMobile={this.state.isMobile}
       />,
       <Content11
-        id="Content11_0"
-        key="Content11_0"
+        id="contact_me"
+        key="contact_me"
         dataSource={PortfolioDataSource}
         isMobile={this.state.isMobile}
       />,
