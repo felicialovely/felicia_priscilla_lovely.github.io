@@ -103,7 +103,7 @@ export const KnowledgeDataSource = {
           content: {
             className: 'knowledge-content',
             children:
-              'Javascript',
+              'Programming Language',
           },
         },
       },
@@ -123,7 +123,7 @@ export const KnowledgeDataSource = {
           content: {
             className: 'knowledge-content',
             children:
-              'Typescript',
+              'Programming Language',
           },
         },
       },
@@ -143,7 +143,7 @@ export const KnowledgeDataSource = {
           content: {
             className: 'knowledge-content',
             children:
-              'React JS',
+              'Front End Library',
           },
         },
       },
@@ -163,7 +163,7 @@ export const KnowledgeDataSource = {
           content: {
             className: 'knowledge-content',
             children:
-              'Next JS',
+              'Front End Framework',
           },
         },
       },
@@ -183,7 +183,7 @@ export const KnowledgeDataSource = {
           content: {
             className: 'knowledge-content',
             children:
-              'CSS',
+              'Styling',
           },
         },
       },
@@ -203,7 +203,7 @@ export const KnowledgeDataSource = {
           content: {
             className: 'knowledge-content',
             children:
-              'Less',
+              'Styling',
           },
         },
       },
@@ -223,7 +223,7 @@ export const KnowledgeDataSource = {
           content: {
             className: 'knowledge-content',
             children:
-              'Saas',
+              'Styling',
           },
         },
       },
@@ -243,7 +243,7 @@ export const KnowledgeDataSource = {
           content: {
             className: 'knowledge-content',
             children:
-              'Ant Design',
+              'UI Library',
           },
         },
       },
@@ -251,22 +251,22 @@ export const KnowledgeDataSource = {
   },
 };
 export const PortfolioDataSource = {
-  wrapper: { className: 'home-page-wrapper content5-wrapper' },
-  page: { className: 'home-page content5' },
+  wrapper: { className: 'home-page-wrapper portfolio-wrapper' },
+  page: { className: 'home-page portfolio' },
   OverPack: { playScale: 0.3, className: '' },
   titleWrapper: {
     className: 'title-wrapper',
     children: [
-      { name: 'title', children: '客户案例', className: 'title-h1' },
+      { name: 'title', children: 'Portfolio', className: 'title-h1' },
       {
         name: 'content',
         className: 'title-content',
-        children: '在这里用一段话介绍服务的案例情况',
+        children: 'Here are projects that I have ever develop',
       },
     ],
   },
   block: {
-    className: 'content5-img-wrapper',
+    className: 'portfolio-img-wrapper',
     gutter: 16,
     children: [
       {
@@ -275,7 +275,7 @@ export const PortfolioDataSource = {
         md: 6,
         xs: 24,
         children: {
-          wrapper: { className: 'content5-block-content' },
+          wrapper: { className: 'portfolio-block-content' },
           img: {
             children:
               'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
@@ -289,7 +289,7 @@ export const PortfolioDataSource = {
         md: 6,
         xs: 24,
         children: {
-          wrapper: { className: 'content5-block-content' },
+          wrapper: { className: 'portfolio-block-content' },
           img: {
             children:
               'https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg',
@@ -303,7 +303,7 @@ export const PortfolioDataSource = {
         md: 6,
         xs: 24,
         children: {
-          wrapper: { className: 'content5-block-content' },
+          wrapper: { className: 'portfolio-block-content' },
           img: {
             children:
               'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
@@ -317,7 +317,7 @@ export const PortfolioDataSource = {
         md: 6,
         xs: 24,
         children: {
-          wrapper: { className: 'content5-block-content' },
+          wrapper: { className: 'portfolio-block-content' },
           img: {
             children:
               'https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg',
@@ -331,7 +331,7 @@ export const PortfolioDataSource = {
         md: 6,
         xs: 24,
         children: {
-          wrapper: { className: 'content5-block-content' },
+          wrapper: { className: 'portfolio-block-content' },
           img: {
             children:
               'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
@@ -345,7 +345,7 @@ export const PortfolioDataSource = {
         md: 6,
         xs: 24,
         children: {
-          wrapper: { className: 'content5-block-content' },
+          wrapper: { className: 'portfolio-block-content' },
           img: {
             children:
               'https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg',
@@ -359,7 +359,7 @@ export const PortfolioDataSource = {
         md: 6,
         xs: 24,
         children: {
-          wrapper: { className: 'content5-block-content' },
+          wrapper: { className: 'portfolio-block-content' },
           img: {
             children:
               'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
@@ -373,7 +373,7 @@ export const PortfolioDataSource = {
         md: 6,
         xs: 24,
         children: {
-          wrapper: { className: 'content5-block-content' },
+          wrapper: { className: 'portfolio-block-content' },
           img: {
             children:
               'https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg',

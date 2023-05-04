@@ -1,8 +1,8 @@
-@content5: content5;
-.@{content5}-wrapper {
+@portfolio: portfolio;
+.@{portfolio}-wrapper {
   background-color: #fafafa;
   min-height: 720px;
-  .@{content5} {
+  .@{portfolio} {
     >p {
       text-align: center;
     }
@@ -12,7 +12,7 @@
       right: 0;
       .block {
         margin-bottom: 24px;
-        .content5-block-content {
+        .portfolio-block-content {
           display: block;
           background: #fff;
           border-radius: 4px;
@@ -29,7 +29,7 @@
 
           transition: box-shadow .3s ease-out, transform .3s ease-out;
           & > span {
-            width: 100%;
+            width: 90%;
             height: 160px;
             display: block;
             background: @line-color;
@@ -38,6 +38,7 @@
           & p {
             width: 100%;
             line-height: 30px;
+            color: black;
           }
           &:hover {
             & p {
@@ -51,10 +52,10 @@
 }
 
 @media screen and (max-width: 767px) {
-  .@{content5}-wrapper {
+  .@{portfolio}-wrapper {
     height: 2000px;
     overflow: hidden;
-    .@{content5} {
+    .@{portfolio} {
       ul {
         li {
           display: block;
