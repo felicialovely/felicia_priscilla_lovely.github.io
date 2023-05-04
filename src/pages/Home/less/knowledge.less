@@ -1,7 +1,7 @@
-@content3: content3;
-.@{content3}-wrapper {
+@knowledge: knowledge;
+.@{knowledge}-wrapper {
   min-height: 764px;
-  .@{content3} {
+  .@{knowledge} {
     height: 100%;
     overflow: hidden;
     & .title-content {
@@ -9,19 +9,25 @@
     }
     &-block-wrapper {
       position: relative;
-      .@{content3}-block {
-        display: inline-block;
+      .@{knowledge}-block {
         padding: 48px 24px;
         vertical-align: top;
-        .@{content3}-icon {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .@{knowledge}-icon {
+          transform: translate(-100%, 0px);
           display: inline-block;
           width: 15%;
           vertical-align: top;
         }
-        .@{content3}-text {
+        .@{knowledge}-text {
           width: 85%;
           display: inline-block;
           padding-left: 8%;
+          *{
+            text-align: center;
+          }
         }
         &.clear-both {
           clear: both;
@@ -32,14 +38,14 @@
 }
 
 @media screen and (max-width: 767px) {
-  .@{content3}-wrapper {
+  .@{knowledge}-wrapper {
     min-height: 1080px;
-    .@{content3} {
+    .@{knowledge} {
       &-block-wrapper {
         margin: 20px auto;
         height: auto;
-        .@{content3}-block {
-          .@{content3}-title {
+        .@{knowledge}-block {
+          .@{knowledge}-title {
             font-size: 20px;
           }
           &.queue-anim-leaving {

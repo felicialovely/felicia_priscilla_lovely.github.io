@@ -51,159 +51,199 @@ export const BannerDataSource = {
   button: { className: 'banner-button', children: 'View More' },
 };
 export const IntroDataSource = {
-  wrapper: { className: 'home-page-wrapper content1-wrapper' },
-  OverPack: { className: 'home-page content1', playScale: 0.3 },
-  imgWrapper: { className: 'content1-img', md: 10, xs: 24 },
+  wrapper: { className: 'home-page-wrapper intro-wrapper' },
+  OverPack: { className: 'home-page intro', playScale: 0.3 },
+  imgWrapper: { className: 'intro-img', md: 10, xs: 24 },
   img: {
     children: './assets/female-developer.svg',
   },
-  textWrapper: { className: 'content1-text', md: 14, xs: 24 },
-  title: { className: 'content1-title', children: "Let's build awesome technology together!" },
+  textWrapper: { className: 'intro-text', md: 14, xs: 24 },
+  title: { className: 'intro-title', children: "Let's build awesome technology together!" },
   content: {
-    className: 'content1-content',
+    className: 'intro-content',
     children:
       "I am a Software Developer, especially in Front End Developer. I believe software is a great combination between artistry and engineering. Let's see how I can tell you about me first, feel free to check my resume website!",
   },
 };
 export const KnowledgeDataSource = {
-  wrapper: { className: 'home-page-wrapper content3-wrapper' },
-  page: { className: 'home-page content3' },
+  wrapper: { className: 'home-page-wrapper knowledge-wrapper' },
+  page: { className: 'home-page knowledge' },
   OverPack: { playScale: 0.3 },
   titleWrapper: {
     className: 'title-wrapper',
     children: [
       {
         name: 'title',
-        children: '蚂蚁金融云提供专业的服务',
+        children: 'Skills',
         className: 'title-h1',
       },
       {
         name: 'content',
         className: 'title-content',
-        children: '基于阿里云强大的基础资源',
+        children: 'Here are technologies that I have ever use while developing application',
       },
     ],
   },
   block: {
-    className: 'content3-block-wrapper',
+    className: 'knowledge-block-wrapper',
     children: [
       {
         name: 'block0',
-        className: 'content3-block',
+        className: 'knowledge-block',
         md: 8,
         xs: 24,
         children: {
           icon: {
-            className: 'content3-icon',
+            className: 'knowledge-icon',
             children:
-              'https://zos.alipayobjects.com/rmsportal/ScHBSdwpTkAHZkJ.png',
+              './assets/javascript-logo.png',
           },
-          textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '企业资源管理' },
+          textWrapper: { className: 'knowledge-text' },
+          title: { className: 'knowledge-title', children: 'Javascript' },
           content: {
-            className: 'content3-content',
+            className: 'knowledge-content',
             children:
-              '云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。',
+              'Javascript',
           },
         },
       },
       {
         name: 'block1',
-        className: 'content3-block',
+        className: 'knowledge-block',
         md: 8,
         xs: 24,
         children: {
           icon: {
-            className: 'content3-icon',
+            className: 'knowledge-icon',
             children:
-              'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png',
+              './assets/typescript-logo.png',
           },
-          textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '云安全' },
+          textWrapper: { className: 'knowledge-text' },
+          title: { className: 'knowledge-title', children: 'Typescript' },
           content: {
-            className: 'content3-content',
+            className: 'knowledge-content',
             children:
-              '按金融企业安全要求打造的完整云上安全体系，全方位保障金融应用及数据安全。',
+              'Typescript',
           },
         },
       },
       {
         name: 'block2',
-        className: 'content3-block',
+        className: 'knowledge-block',
         md: 8,
         xs: 24,
         children: {
           icon: {
-            className: 'content3-icon',
+            className: 'knowledge-icon',
             children:
-              'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png',
+              './assets/react-logo.png',
           },
-          textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '云监控' },
+          textWrapper: { className: 'knowledge-text' },
+          title: { className: 'knowledge-title', children: 'React JS' },
           content: {
-            className: 'content3-content',
+            className: 'knowledge-content',
             children:
-              '分布式云环境集中监控，统一资源及应用状态视图，智能分析及故障定位。',
+              'React JS',
           },
         },
       },
       {
         name: 'block3',
-        className: 'content3-block',
+        className: 'knowledge-block',
         md: 8,
         xs: 24,
         children: {
           icon: {
-            className: 'content3-icon',
+            className: 'knowledge-icon',
             children:
-              'https://zos.alipayobjects.com/rmsportal/MNdlBNhmDBLuzqp.png',
+              './assets/next-js-logo.svg',
           },
-          textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '移动' },
+          textWrapper: { className: 'knowledge-text' },
+          title: { className: 'knowledge-title', children: 'Next JS' },
           content: {
-            className: 'content3-content',
+            className: 'knowledge-content',
             children:
-              '一站式移动金融APP开发及全面监控；丰富可用组件，动态发布和故障热修复。',
+              'Next JS',
           },
         },
       },
       {
         name: 'block4',
-        className: 'content3-block',
+        className: 'knowledge-block',
         md: 8,
         xs: 24,
         children: {
           icon: {
-            className: 'content3-icon',
+            className: 'knowledge-icon',
             children:
-              'https://zos.alipayobjects.com/rmsportal/UsUmoBRyLvkIQeO.png',
+              './assets/css-logo.png',
           },
-          textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '分布式中间件' },
+          textWrapper: { className: 'knowledge-text' },
+          title: { className: 'knowledge-title', children: 'CSS' },
           content: {
-            className: 'content3-content',
+            className: 'knowledge-content',
             children:
-              '金融级联机交易处理中间件，大规模分布式计算机，数万笔/秒级并发能力，严格保证交易数据统一性。',
+              'CSS',
           },
         },
       },
       {
         name: 'block5',
-        className: 'content3-block',
+        className: 'knowledge-block',
         md: 8,
         xs: 24,
         children: {
           icon: {
-            className: 'content3-icon',
+            className: 'knowledge-icon',
             children:
-              'https://zos.alipayobjects.com/rmsportal/ipwaQLBLflRfUrg.png',
+              './assets/less-logo.png',
           },
-          textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '大数据' },
+          textWrapper: { className: 'knowledge-text' },
+          title: { className: 'knowledge-title', children: 'Less' },
           content: {
-            className: 'content3-content',
+            className: 'knowledge-content',
             children:
-              '一站式、全周期大数据协同工作平台，PB级数据处理、毫秒级数据分析工具。',
+              'Less',
+          },
+        },
+      },
+      {
+        name: 'block6',
+        className: 'knowledge-block',
+        md: 8,
+        xs: 24,
+        children: {
+          icon: {
+            className: 'knowledge-icon',
+            children:
+              './assets/sass-logo.png',
+          },
+          textWrapper: { className: 'knowledge-text' },
+          title: { className: 'knowledge-title', children: 'Saas' },
+          content: {
+            className: 'knowledge-content',
+            children:
+              'Saas',
+          },
+        },
+      },
+      {
+        name: 'block6',
+        className: 'knowledge-block',
+        md: 8,
+        xs: 24,
+        children: {
+          icon: {
+            className: 'knowledge-icon',
+            children:
+              './assets/antd-logo.svg',
+          },
+          textWrapper: { className: 'knowledge-text' },
+          title: { className: 'knowledge-title', children: 'Ant Design' },
+          content: {
+            className: 'knowledge-content',
+            children:
+              'Ant Design',
           },
         },
       },
