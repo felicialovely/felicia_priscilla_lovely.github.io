@@ -3,7 +3,7 @@ export const NavDataSource = {
   page: { className: 'home-page' },
   logo: {
     className: 'header-logo',
-    children: './assets/logo-with-title.png',
+    children: './assets/website-logo/logo-with-title.png',
     href: '/',
   },
   menu: {
@@ -42,7 +42,7 @@ export const BannerDataSource = {
   textWrapper: { className: 'banner-text-wrapper' },
   title: {
     className: 'banner-title',
-    children: './assets/logo.png',
+    children: './assets/website-logo/logo-white.png',
   },
   content: {
     className: 'banner-content',
@@ -96,7 +96,7 @@ export const KnowledgeDataSource = {
           icon: {
             className: 'knowledge-icon',
             children:
-              './assets/javascript-logo.png',
+              './assets/knowledge-logo/javascript-logo.png',
           },
           textWrapper: { className: 'knowledge-text' },
           title: { className: 'knowledge-title', children: 'Javascript' },
@@ -116,7 +116,7 @@ export const KnowledgeDataSource = {
           icon: {
             className: 'knowledge-icon',
             children:
-              './assets/typescript-logo.png',
+              './assets/knowledge-logo/typescript-logo.png',
           },
           textWrapper: { className: 'knowledge-text' },
           title: { className: 'knowledge-title', children: 'Typescript' },
@@ -136,7 +136,7 @@ export const KnowledgeDataSource = {
           icon: {
             className: 'knowledge-icon',
             children:
-              './assets/react-logo.png',
+              './assets/knowledge-logo/react-logo.png',
           },
           textWrapper: { className: 'knowledge-text' },
           title: { className: 'knowledge-title', children: 'React JS' },
@@ -156,7 +156,7 @@ export const KnowledgeDataSource = {
           icon: {
             className: 'knowledge-icon',
             children:
-              './assets/next-js-logo.svg',
+              './assets/knowledge-logo/next-js-logo.svg',
           },
           textWrapper: { className: 'knowledge-text' },
           title: { className: 'knowledge-title', children: 'Next JS' },
@@ -176,7 +176,7 @@ export const KnowledgeDataSource = {
           icon: {
             className: 'knowledge-icon',
             children:
-              './assets/css-logo.png',
+              './assets/knowledge-logo/css-logo.png',
           },
           textWrapper: { className: 'knowledge-text' },
           title: { className: 'knowledge-title', children: 'CSS' },
@@ -196,7 +196,7 @@ export const KnowledgeDataSource = {
           icon: {
             className: 'knowledge-icon',
             children:
-              './assets/less-logo.png',
+              './assets/knowledge-logo/less-logo.png',
           },
           textWrapper: { className: 'knowledge-text' },
           title: { className: 'knowledge-title', children: 'Less' },
@@ -216,7 +216,7 @@ export const KnowledgeDataSource = {
           icon: {
             className: 'knowledge-icon',
             children:
-              './assets/sass-logo.png',
+              './assets/knowledge-logo/sass-logo.png',
           },
           textWrapper: { className: 'knowledge-text' },
           title: { className: 'knowledge-title', children: 'Saas' },
@@ -236,7 +236,7 @@ export const KnowledgeDataSource = {
           icon: {
             className: 'knowledge-icon',
             children:
-              './assets/antd-logo.svg',
+              './assets/knowledge-logo/antd-logo.svg',
           },
           textWrapper: { className: 'knowledge-text' },
           title: { className: 'knowledge-title', children: 'Ant Design' },
@@ -244,6 +244,26 @@ export const KnowledgeDataSource = {
             className: 'knowledge-content',
             children:
               'UI Library',
+          },
+        },
+      },
+      {
+        name: 'block7',
+        className: 'knowledge-block',
+        md: 8,
+        xs: 24,
+        children: {
+          icon: {
+            className: 'knowledge-icon',
+            children:
+              './assets/knowledge-logo/figma-logo.png',
+          },
+          textWrapper: { className: 'knowledge-text' },
+          title: { className: 'knowledge-title', children: 'Figma' },
+          content: {
+            className: 'knowledge-content',
+            children:
+              'Design and Prototyping Tool',
           },
         },
       },
@@ -386,35 +406,29 @@ export const PortfolioDataSource = {
 };
 export const ContactDataSource = {
   OverPack: {
-    className: 'home-page-wrapper content11-wrapper',
+    className: 'home-page-wrapper contact-me-wrapper',
     playScale: 0.3,
   },
   titleWrapper: {
     className: 'title-wrapper',
     children: [
-      {
-        name: 'image',
-        children:
-          'https://gw.alipayobjects.com/zos/rmsportal/PiqyziYmvbgAudYfhuBr.svg',
-        className: 'title-image',
-      },
-      { name: 'title', children: '丰富的特色展台', className: 'title-h1' },
+      { name: 'title', children: 'Contact Me', className: 'title-h1' },
       {
         name: 'content',
         children:
-          '特色展台包括 Ant Design 、AntV、AntG、Egg 等明星产品，更有产品专家',
+          "I'm always open to new opportunities and connections",
         className: 'title-content',
       },
       {
         name: 'content2',
-        children: '现场问诊，为你答疑解难',
+        children: "If you would like to get in touch, please don't hesitate to send me an email",
         className: 'title-content',
       },
     ],
   },
   button: {
     className: '',
-    children: { a: { className: 'button', href: '#', children: '立即报名' } },
+    children: { a: { className: 'button', href: '#', children: 'Click Here for Sending Mail to Me' } },
   },
 };
 export const FooterDataSource = {

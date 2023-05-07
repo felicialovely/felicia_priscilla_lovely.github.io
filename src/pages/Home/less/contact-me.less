@@ -1,5 +1,5 @@
-@content11: content11;
-.@{content11}-wrapper {
+@contact-me: contact-me;
+.@{contact-me}-wrapper {
   height: 480px;
   background: url("https://gw.alipayobjects.com/zos/rmsportal/ZsWYzLOItgeaWDSsXdZd.svg") no-repeat bottom;
   background-size: cover;
@@ -21,13 +21,14 @@
     border: 0;
     border-radius: 21px;
     color: #fff;
-    width: 128px;
+    width: fit-content !important; 
     padding: 0 15px;
     display: inline-block;
     transition: transform .3s, box-shadow .3s;
     &:hover {
       transform: translateY(-4px);
       box-shadow: 0 12px 20px #0554b7;
+      color: white;
     }
     &:active {
       transform: translateY(4px);
@@ -40,7 +41,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .@{content11}-wrapper {
+  .@{contact-me}-wrapper {
     padding-bottom: 0;
   }
 }
