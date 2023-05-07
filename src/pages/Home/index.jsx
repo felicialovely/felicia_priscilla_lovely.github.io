@@ -20,7 +20,7 @@ import {
   ContactDataSource,
   FooterDataSource,
 } from '../../libraries/data.source';
-import './less/antMotionStyle.less';
+import '../../styles/index.less';
 
 let isMobile;
 enquireScreen((b) => {
