@@ -3,18 +3,23 @@
 import React from 'react';
 import { enquireScreen } from 'enquire-js';
 
-import Nav3 from './Nav3';
+import Navigation from '@components/Navigation';
 import Teams0 from './Teams0';
 import Content9 from './Content9';
 import Content11 from './Content11';
+import ContactMe from '@components/ContactMe';
+import Footer from '@components/Footer';
+
+import {
+  Teams00DataSource,
+  Content90DataSource,
+} from './data.source';
 
 import {
   NavDataSource,
-  Teams00DataSource,
-  Content90DataSource,
-  PortfolioDataSource,
-} from './data.source';
-import './less/antMotionStyle.less';
+  ContactDataSource,
+  FooterDataSource,
+} from '../../libraries/data.source';
 
 let isMobile;
 enquireScreen((b) => {
@@ -52,10 +57,11 @@ export default class Profile extends React.Component {
 
   render() {
     const children = [
-      <Nav3
+      <Navigation
         id="nav"
         key="nav"
         dataSource={NavDataSource}
+        selected="profile"
         isMobile={this.state.isMobile}
       />,
       <Teams0
@@ -68,12 +74,6 @@ export default class Profile extends React.Component {
         id="Content9_0"
         key="Content9_0"
         dataSource={Content90DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Content11
-        id="contact_me"
-        key="contact_me"
-        dataSource={PortfolioDataSource}
         isMobile={this.state.isMobile}
       />,
     ];

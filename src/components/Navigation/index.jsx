@@ -21,7 +21,7 @@ class Navigation extends React.Component {
   };
 
   render() {
-    const { dataSource, isMobile, ...props } = this.props;
+    const { dataSource, isMobile, selected, ...props } = this.props;
     const { phoneMenuOpen } = this.state;
     const navData = dataSource.menu.children;
     const navChildren = navData.map((item) => {
@@ -126,6 +126,7 @@ class Navigation extends React.Component {
             <Menu
               mode={isMobile ? 'inline' : 'horizontal'}
               defaultSelectedKeys={['home']}
+              selectedKeys={[this.props.selected]}
               theme="light"
             >
               {navChildren}

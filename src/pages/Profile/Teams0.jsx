@@ -3,7 +3,7 @@ import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import BannerAnim, { Element } from 'rc-banner-anim';
 import TweenOne from 'rc-tween-one';
 import QueueAnim from 'rc-queue-anim';
-import { getChildrenToRender } from './utils';
+import { getChildrenToRender } from '../../libraries/utils';
 import 'rc-banner-anim/assets/index.css';
 
 class Teams extends React.PureComponent {

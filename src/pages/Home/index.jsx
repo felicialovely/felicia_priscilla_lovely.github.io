@@ -20,7 +20,6 @@ import {
   ContactDataSource,
   FooterDataSource,
 } from '../../libraries/data.source';
-import '../../styles/index.less';
 
 let isMobile;
 enquireScreen((b) => {
@@ -67,6 +66,7 @@ export default class Home extends React.Component {
         id="nav"
         key="nav"
         dataSource={NavDataSource}
+        selected="home"
         isMobile={this.state.isMobile}
       />,
       <Banner

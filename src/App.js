@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { enquireScreen } from 'enquire-js';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
+import './styles/index.less';
 
 let isMobile;
 enquireScreen((b) => {
