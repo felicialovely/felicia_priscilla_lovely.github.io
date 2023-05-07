@@ -6,7 +6,6 @@ import { enquireScreen } from 'enquire-js';
 import Navigation from '@components/Navigation';
 import Teams0 from './Teams0';
 import Content9 from './Content9';
-import Content11 from './Content11';
 import ContactMe from '@components/ContactMe';
 import Footer from '@components/Footer';
 
@@ -74,6 +73,18 @@ export default class Profile extends React.Component {
         id="Content9_0"
         key="Content9_0"
         dataSource={Content90DataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <ContactMe
+        id="contact-me"
+        key="contact-me"
+        dataSource={ContactDataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <Footer
+        id="footer"
+        key="footer"
+        dataSource={FooterDataSource}
         isMobile={this.state.isMobile}
       />,
     ];
