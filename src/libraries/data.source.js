@@ -55,14 +55,14 @@ export const IntroDataSource = {
   OverPack: { className: 'home-page intro', playScale: 0.3 },
   imgWrapper: { className: 'intro-img', md: 10, xs: 24 },
   img: {
-    children: './assets/female-developer.svg',
+    children: './assets/intro-image.jpg',
   },
   textWrapper: { className: 'intro-text', md: 14, xs: 24 },
-  title: { className: 'intro-title', children: "Let's build awesome technology together!" },
+  title: { className: 'intro-title', children: "Hello and welcome to my website!" },
   content: {
     className: 'intro-content',
     children:
-      "I am a Software Developer, especially in Front End Developer. I believe software is a great combination between artistry and engineering. Let's see how I can tell you about me first, feel free to check my resume website!",
+      "My name is Felicia, and I'm a Front End Engineer based in Indonesia. I'm passionate about software engineering especially front end side, and I love using my skills and experience to build any application. On this website, you'll find more information about my background, experience, and interests, as well as examples of my work and projects. Whether you're here to learn more about me or to explore some of my work, I hope you find what you're looking for. If you'd like to get in touch, please don't hesitate to reach out using the contact form on this website or through my social media profiles. I'm always interested in meeting new people and discussing new opportunities. Thank you for visiting, and I hope you enjoy your time here!",
   },
 };
 export const KnowledgeDataSource = {
@@ -80,7 +80,8 @@ export const KnowledgeDataSource = {
       {
         name: 'content',
         className: 'title-content',
-        children: 'Here are technologies that I have ever use while developing application',
+        children:
+          "I have developed a range of skills throughout my professional journey, and I'm excited to showcase some of my key competencies here. In the following section, you'll find a list of some of my core skills and competencies.",
       },
     ],
   },
@@ -281,7 +282,7 @@ export const PortfolioDataSource = {
       {
         name: 'content',
         className: 'title-content',
-        children: 'Here are projects that I have ever develop',
+        children: "In this section, you'll find a selection of some of my favorite projects, along with a brief description of each project and the skills and technologies I used to complete them. I hope you find these examples informative and inspiring, and I'm always excited to discuss new opportunities and projects.",
       },
     ],
   },
