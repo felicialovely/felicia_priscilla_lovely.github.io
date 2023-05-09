@@ -1,8 +1,8 @@
-@teams0: teams0;
+@profile: profile;
 
-.@{teams0}-wrapper {
+.@{profile}-wrapper {
   height: 430px;
-  .@{teams0} {
+  .@{profile} {
     padding: 64px 24px;
     display: flex;
     align-items: flex-end;
@@ -26,7 +26,7 @@
 
     &-banner-user-elem {
       height: 100%;
-      color: #fff;
+      color: black;
       position: relative;
       overflow: hidden;
     }
@@ -42,6 +42,8 @@
       margin-bottom: 24px;
       img {
         height: 100%;
+        width: 100%;
+        object-fit: cover;
       }
     }
     &-content {
@@ -61,10 +63,10 @@
 }
 
 @media screen and (max-width: 767px) {
-  .@{teams0}-wrapper {
+  .@{profile}-wrapper {
     min-height: 480px;
 
-    .@{teams0} {
+    .@{profile} {
       display: block;
     }
   }

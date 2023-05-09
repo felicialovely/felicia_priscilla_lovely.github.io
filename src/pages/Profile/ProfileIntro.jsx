@@ -6,7 +6,7 @@ import QueueAnim from 'rc-queue-anim';
 import { getChildrenToRender } from '../../libraries/utils';
 import 'rc-banner-anim/assets/index.css';
 
-class Teams extends React.PureComponent {
+class ProfileIntro extends React.PureComponent {
   getChildrenToRender = (children) => {
     return children.map((item, i) => {
       const { titleWrapper, ...elementPros } = item;
@@ -72,4 +72,4 @@ class Teams extends React.PureComponent {
   }
 }
 
-export default Teams;
+export default ProfileIntro;

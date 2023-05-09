@@ -220,7 +220,7 @@ export const KnowledgeDataSource = {
               './assets/knowledge-logo/sass-logo.png',
           },
           textWrapper: { className: 'knowledge-text' },
-          title: { className: 'knowledge-title', children: 'Saas' },
+          title: { className: 'knowledge-title', children: 'Sass' },
           content: {
             className: 'knowledge-content',
             children:
@@ -465,6 +465,43 @@ export const FooterDataSource = {
         href: 'https://www.instagram.com/felicia_priscilla_lovely/',
         className: 'links-item',
         children: 'InstagramOutlined'
+      },
+    ],
+  },
+};
+
+export const ProfileDataSource = {
+  wrapper: { className: 'home-page-wrapper profile-wrapper' },
+  OverPack: { playScale: 0.3, className: 'home-page profile' },
+  BannerAnim: {
+    className: 'banner-anim',
+    children: [
+      {
+        name: 'elem0',
+        className: 'profile-banner-user-elem',
+        titleWrapper: {
+          className: 'profile-content-wrapper',
+          children: [
+            {
+              name: 'image',
+              children:
+                './assets/profile-picture.jpeg',
+              className: 'profile-image',
+            },
+            {
+              name: 'content',
+              children:
+                'As a front-end engineer with expertise in developing responsive and user-friendly interfaces, I aim to create innovative and engaging web experiences that leave a lasting impression on users',
+              className: 'profile-content',
+            },
+            { name: 'title', children: 'Felicia Priscilla Lovely', className: 'profile-h1' },
+            {
+              name: 'content2',
+              children: 'Front End Software Engineer',
+              className: 'profile-content',
+            },
+          ],
+        },
       },
     ],
   },

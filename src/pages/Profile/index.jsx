@@ -4,18 +4,18 @@ import React from 'react';
 import { enquireScreen } from 'enquire-js';
 
 import Navigation from '@components/Navigation';
-import Teams0 from './Teams0';
+import ProfileIntro from './ProfileIntro';
 import Content9 from './Content9';
 import ContactMe from '@components/ContactMe';
 import Footer from '@components/Footer';
 
 import {
-  Teams00DataSource,
   Content90DataSource,
 } from './data.source';
 
 import {
   NavDataSource,
+  ProfileDataSource,
   ContactDataSource,
   FooterDataSource,
 } from '../../libraries/data.source';
@@ -63,10 +63,10 @@ export default class Profile extends React.Component {
         selected="profile"
         isMobile={this.state.isMobile}
       />,
-      <Teams0
-        id="Teams0_0"
-        key="Teams0_0"
-        dataSource={Teams00DataSource}
+      <ProfileIntro
+        id="profile"
+        key="profile"
+        dataSource={ProfileDataSource}
         isMobile={this.state.isMobile}
       />,
       <Content9
