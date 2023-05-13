@@ -4,8 +4,8 @@ import React from 'react';
 import { enquireScreen } from 'enquire-js';
 
 import Navigation from '@components/Navigation';
-import ProfileIntro from './ProfileIntro';
-import WorkingExperience from './WorkingExperience';
+import ProfileIntro from './components/ProfileIntro';
+import WorkingExperience from './components/WorkingExperience';
 import ContactMe from '@components/ContactMe';
 import Footer from '@components/Footer';
 
