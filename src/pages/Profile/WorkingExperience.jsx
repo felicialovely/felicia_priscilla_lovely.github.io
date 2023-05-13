@@ -3,7 +3,7 @@ import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import QueueAnim from 'rc-queue-anim';
 import { getChildrenToRender } from '../../libraries/utils';
 
-class Content9 extends React.PureComponent {
+class WorkingExperience extends React.PureComponent {
   getBlockChildren = (block, i) => {
     const { isMobile } = this.props;
     const item = block.children;
@@ -76,4 +76,4 @@ class Content9 extends React.PureComponent {
   }
 }
 
-export default Content9;
+export default WorkingExperience;

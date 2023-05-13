@@ -5,17 +5,14 @@ import { enquireScreen } from 'enquire-js';
 
 import Navigation from '@components/Navigation';
 import ProfileIntro from './ProfileIntro';
-import Content9 from './Content9';
+import WorkingExperience from './WorkingExperience';
 import ContactMe from '@components/ContactMe';
 import Footer from '@components/Footer';
 
 import {
-  Content90DataSource,
-} from './data.source';
-
-import {
   NavDataSource,
   ProfileDataSource,
+  WorkingExperienceDataSource,
   ContactDataSource,
   FooterDataSource,
 } from '../../libraries/data.source';
@@ -69,10 +66,10 @@ export default class Profile extends React.Component {
         dataSource={ProfileDataSource}
         isMobile={this.state.isMobile}
       />,
-      <Content9
-        id="Content9_0"
-        key="Content9_0"
-        dataSource={Content90DataSource}
+      <WorkingExperience
+        id="working-experience"
+        key="working-experience"
+        dataSource={WorkingExperienceDataSource}
         isMobile={this.state.isMobile}
       />,
       <ContactMe
@@ -95,9 +92,7 @@ export default class Profile extends React.Component {
           this.dom = d;
         }}
       >
-        {/* 如果不是 dva 2.0 替换成 {children} start */}
         {this.state.show && children}
-        {/* 如果不是 dva 2.0 替换成 {children} end */}
       </div>
     );
   }

@@ -506,3 +506,139 @@ export const ProfileDataSource = {
     ],
   },
 };
+
+export const WorkingExperienceDataSource = {
+  wrapper: { className: 'home-page-wrapper working-experience-wrapper' },
+  page: { className: 'home-page working-experience' },
+  titleWrapper: {
+    className: 'title-wrapper',
+    children: [
+      { name: 'title', children: 'Working Experience', className: 'title-h1' },
+    ],
+  },
+  block: {
+    className: 'timeline',
+    children: [
+      {
+        name: 'block0',
+        className: 'block-wrapper',
+        playScale: 0.3,
+        children: {
+          imgWrapper: { className: 'image-wrapper' },
+          textWrapper: { className: 'text-wrapper' },
+          img: {
+            className: 'block-img',
+            children:
+              './assets/working-experience-logo/logo-shopee.png',
+          },
+          icon: {
+            className: 'block-icon',
+            children:
+              'https://gw.alipayobjects.com/zos/rmsportal/agOOBdKEIJlQhfeYhHJc.svg',
+          },
+          name: { className: 'block-name', children: 'Front End Engineer' },
+          post: { className: 'block-post', children: 'Shopee Indonesia' },
+          time: { className: 'block-time', children: '' },
+          title: { className: 'block-title', children: 'April 2022 - Present' },
+          content: { className: 'block-content', children: 'Building Front End of applications using React JS and Next JS with Typescript, while the design is styled using Saas and Ant Design Library.' },
+        },
+      },
+      {
+        name: 'block1',
+        className: 'block-wrapper',
+        playScale: 0.3,
+        children: {
+          imgWrapper: { className: 'image-wrapper' },
+          textWrapper: { className: 'text-wrapper' },
+          img: {
+            className: 'block-img',
+            children:
+              './assets/working-experience-logo/logo-nexsoft.jpg',
+          },
+          icon: {
+            className: 'block-icon',
+            children:
+              'https://gw.alipayobjects.com/zos/rmsportal/agOOBdKEIJlQhfeYhHJc.svg',
+          },
+          name: { className: 'block-name', children: 'Front End Developer' },
+          post: { className: 'block-post', children: 'PT. Paramadaksa Teknologi Nusantara / Nexsoft' },
+          time: { className: 'block-time', children: '' },
+          title: { className: 'block-title', children: 'May 2021 -  March 2022' },
+          content: { className: 'block-content', children: 'Building Front End of applications that implements Single Page Application (SPA), using React JS, while the design is styled using CSS and Ant Design Library.' },
+        },
+      },
+      {
+        name: 'block2',
+        className: 'block-wrapper',
+        playScale: 0.3,
+        children: {
+          imgWrapper: { className: 'image-wrapper' },
+          textWrapper: { className: 'text-wrapper' },
+          img: {
+            className: 'block-img',
+            children:
+              './assets/working-experience-logo/logo-nexsoft.jpg',
+          },
+          icon: {
+            className: 'block-icon',
+            children:
+              'https://gw.alipayobjects.com/zos/rmsportal/QviGtUPvTFxdhsTUAacr.svg',
+          },
+          name: { className: 'block-name', children: 'Back End Developer' },
+          post: { className: 'block-post', children: 'PT. Paramadaksa Teknologi Nusantara / Nexsoft' },
+          time: { className: 'block-time', children: '' },
+          title: { className: 'block-title', children: 'Jan 2021 - May 2021' },
+          content: { className: 'block-content', children: 'Building and developing API using Go Programming Language' },
+        },
+      },
+      {
+        name: 'block3',
+        className: 'block-wrapper',
+        playScale: 0.3,
+        children: {
+          imgWrapper: { className: 'image-wrapper' },
+          textWrapper: { className: 'text-wrapper' },
+          img: {
+            className: 'block-img',
+            children:
+              './assets/working-experience-logo/logo-nexsoft.jpg',
+          },
+          icon: {
+            className: 'block-icon',
+            children:
+              'https://gw.alipayobjects.com/zos/rmsportal/QviGtUPvTFxdhsTUAacr.svg',
+          },
+          name: { className: 'block-name', children: 'Full Stack Developer' },
+          post: { className: 'block-post', children: 'PT. Paramadaksa Teknologi Nusantara / Nexsoft' },
+          time: { className: 'block-time', children: '' },
+          title: { className: 'block-title', children: 'May 2020 - Dec 2020' },
+          content: { className: 'block-content', children: 'Developing web application using Java and Java Server Page (JSP)' },
+        },
+      },
+      {
+        name: 'block4',
+        className: 'block-wrapper',
+        playScale: 0.3,
+        children: {
+          imgWrapper: { className: 'image-wrapper' },
+          textWrapper: { className: 'text-wrapper' },
+          img: {
+            className: 'block-img',
+            children:
+              './assets/working-experience-logo/logo-winning-soft.jpg',
+          },
+          icon: {
+            className: 'block-icon',
+            children:
+              'https://gw.alipayobjects.com/zos/rmsportal/qJnGrvjXPxdKETlVSrbe.svg',
+          },
+          name: { className: 'block-name', children: 'Full Stack Developer Intern' },
+          post: { className: 'block-post', children: 'PT. Datacaraka Solusindo' },
+          time: { className: 'block-time', children: '' },
+          title: { className: 'block-title', children: 'Jun 2019 - Sep 2019' },
+          content: { className: 'block-content', children: 'Building web application using PHP and Javascript' },
+        },
+      },      
+    ],
+  },
+};
