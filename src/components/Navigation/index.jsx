@@ -14,9 +14,8 @@ class Navigation extends React.Component {
   }
 
   phoneMenuClick = () => {
-    const phoneMenuOpen = !this.state.phoneMenuOpen;
     this.setState({
-      phoneMenuOpen,
+      phoneMenuOpen: !this.state.phoneMenuOpen
     });
   };
 
