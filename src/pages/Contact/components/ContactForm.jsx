@@ -12,7 +12,6 @@ class ContactForm extends React.PureComponent {
   render() {
     const openNotification = (status) => {
       if (status === "success") {
-        console.log("masuk");
         notification.open({
           message: "Success",
           description: "Form submitted successfully",

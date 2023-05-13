@@ -422,14 +422,14 @@ export const ContactDataSource = {
       },
       {
         name: 'content2',
-        children: "If you would like to get in touch, please don't hesitate to send me an email",
+        children: "If you would like to get in touch, please don't hesitate to send me a message",
         className: 'title-content',
       },
     ],
   },
   button: {
     className: '',
-    children: { a: { className: 'button', href: '#', children: 'Click Here for Sending Mail to Me' } },
+    children: { a: { className: 'button', href: '/contact', children: 'Click Here for Sending Message to Me' } },
   },
 };
 export const FooterDataSource = {

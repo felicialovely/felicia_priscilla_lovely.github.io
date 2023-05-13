@@ -8,13 +8,9 @@ class WorkingExperience extends React.PureComponent {
   getBlockChildren = (block, i) => {
     const { isMobile } = this.props;
     const item = block.children;
-    const textWrapper = (
-      <QueueAnim
-        key="text"
-        leaveReverse
-        delay={isMobile ? [0, 100] : 0}
-        {...item.textWrapper}
-      >
+
+    const textContent = (
+      <>
         <div key="time" {...item.time}>
           {item.time.children}
         </div>
@@ -25,33 +21,60 @@ class WorkingExperience extends React.PureComponent {
         <div key="p" {...item.content}>
           {item.content.children}
         </div>
+      </>
+    );
+
+    const textWrapper = isMobile ? (
+      <div key="text" {...item.textWrapper}>
+        {textContent}
+      </div>
+    ) : (
+      <QueueAnim
+        key="text"
+        leaveReverse
+        delay={isMobile ? [0, 100] : 0}
+        {...item.textWrapper}
+      >
+        {textContent}
       </QueueAnim>
     );
+
+    const imgContent = (
+      <>
+        <div key="image" {...item.img}>
+          <img src={item.img.children} alt="img" />
+        </div>
+        <div key="name" className="name-wrapper">
+          <div key="name" {...item.name}>
+            {item.name.children}
+          </div>
+          <div key="post" {...item.post}>
+            {item.post.children}
+          </div>
+        </div>
+      </>
+    );
+
     return (
       <OverPack key={i.toString()} {...block}>
-        {isMobile && textWrapper}
-        <QueueAnim
-          className="image-wrapper"
-          key="image"
-          type={isMobile ? "right" : "bottom"}
-          leaveReverse
-          delay={isMobile ? [100, 0] : 0}
-          {...item.imgWrapper}
-        >
-          <div key="image" {...item.img}>
-            <img src={item.img.children} alt="img" />
+        {isMobile ? (
+          <div className="image-wrapper" key="image" {...item.imgWrapper}>
+            {imgContent}
           </div>
-          <div key="name" className="name-wrapper">
-            <div key="name" {...item.name}>
-              {item.name.children}
-            </div>
-            <div key="post" {...item.post}>
-              {item.post.children}
-            </div>
-          </div>
-        </QueueAnim>
+        ) : (
+          <QueueAnim
+            className="image-wrapper"
+            key="image"
+            type={isMobile ? "right" : "bottom"}
+            leaveReverse
+            delay={isMobile ? [100, 0] : 0}
+            {...item.imgWrapper}
+          >
+            {imgContent}
+          </QueueAnim>
+        )}
 
-        {!isMobile && textWrapper}
+        {textWrapper}
       </OverPack>
     );
   };

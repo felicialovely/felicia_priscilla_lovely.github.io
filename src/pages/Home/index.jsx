@@ -7,7 +7,7 @@ import Navigation from "@components/Navigation";
 import Banner from "./components/Banner";
 import Intro from "./components/Intro";
 import Knowledge from "./components/Knowledge";
-import Portfolio from "./components/Portfolio";
+// import Portfolio from "./components/Portfolio";
 import ContactMe from "@components/ContactMe";
 import Footer from "@components/Footer";
 
@@ -16,7 +16,7 @@ import {
   BannerDataSource,
   IntroDataSource,
   KnowledgeDataSource,
-  PortfolioDataSource,
+  // PortfolioDataSource,
   ContactDataSource,
   FooterDataSource,
 } from "../../libraries/data.source";
@@ -84,12 +84,13 @@ export default class Home extends React.Component {
         dataSource={KnowledgeDataSource}
         isMobile={this.state.isMobile}
       />,
-      <Portfolio
-        id="portfolio"
-        key="portfolio"
-        dataSource={PortfolioDataSource}
-        isMobile={this.state.isMobile}
-      />,
+      // TODO: still on progress
+      // <Portfolio
+      //   id="portfolio"
+      //   key="portfolio"
+      //   dataSource={PortfolioDataSource}
+      //   isMobile={this.state.isMobile}
+      // />,
       <ContactMe
         id="contact-me"
         key="contact-me"

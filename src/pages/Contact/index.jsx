@@ -44,7 +44,7 @@ export default class Contact extends React.Component {
         id="nav"
         key="nav"
         dataSource={NavDataSource}
-        selected="profile"
+        selected="contact"
         isMobile={this.state.isMobile}
       />,
       <ContactForm />,
