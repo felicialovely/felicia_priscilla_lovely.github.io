@@ -1,8 +1,8 @@
-import React from 'react';
-import QueueAnim from 'rc-queue-anim';
-import TweenOne from 'rc-tween-one';
-import { Row, Col } from 'antd';
-import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
+import React from "react";
+import QueueAnim from "rc-queue-anim";
+import TweenOne from "rc-tween-one";
+import { Row, Col } from "antd";
+import OverPack from "rc-scroll-anim/lib/ScrollOverPack";
 
 function Intro(props) {
   const { ...tagProps } = props;
@@ -10,19 +10,19 @@ function Intro(props) {
   delete tagProps.dataSource;
   delete tagProps.isMobile;
   const animType = {
-    queue: isMobile ? 'bottom' : 'right',
+    queue: isMobile ? "bottom" : "right",
     one: isMobile
       ? {
-          scaleY: '+=0.3',
+          scaleY: "+=0.3",
           opacity: 0,
-          type: 'from',
-          ease: 'easeOutQuad',
+          type: "from",
+          ease: "easeOutQuad",
         }
       : {
-          x: '-=30',
+          x: "-=30",
           opacity: 0,
-          type: 'from',
-          ease: 'easeOutQuad',
+          type: "from",
+          ease: "easeOutQuad",
         },
   };
   return (
@@ -47,7 +47,7 @@ function Intro(props) {
           key="text"
           type={animType.queue}
           leaveReverse
-          ease={['easeOutQuad', 'easeInQuad']}
+          ease={["easeOutQuad", "easeInQuad"]}
           {...dataSource.textWrapper}
           component={Col}
           componentProps={{

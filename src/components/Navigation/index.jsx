@@ -1,7 +1,7 @@
-import React from 'react';
-import TweenOne from 'rc-tween-one';
-import { Menu } from 'antd';
-import { getChildrenToRender } from '../../libraries/utils';
+import React from "react";
+import TweenOne from "rc-tween-one";
+import { Menu } from "antd";
+import { getChildrenToRender } from "../../libraries/utils";
 
 const { Item, SubMenu } = Menu;
 
@@ -32,10 +32,7 @@ class Navigation extends React.Component {
             key={item.name}
             {...itemProps}
             title={
-              <div
-                {...a}
-                className={`header-item-block ${a.className}`.trim()}
-              >
+              <div {...a} className={`header-item-block ${a.className}`.trim()}>
                 {a.children.map(getChildrenToRender)}
               </div>
             }
@@ -75,16 +72,18 @@ class Navigation extends React.Component {
     return (
       <TweenOne
         component="header"
-        animation={{ opacity: 0, type: 'from' }}
+        animation={{ opacity: 0, type: "from" }}
         {...dataSource.wrapper}
         {...props}
       >
         <div
           {...dataSource.page}
-          className={`${dataSource.page.className}${phoneMenuOpen ? ' open' : ''}`}
+          className={`${dataSource.page.className}${
+            phoneMenuOpen ? " open" : ""
+          }`}
         >
           <TweenOne
-            animation={{ x: -30, type: 'from', ease: 'easeOutQuad' }}
+            animation={{ x: -30, type: "from", ease: "easeOutQuad" }}
             {...dataSource.logo}
           >
             <a href={dataSource.logo.href}>
@@ -113,10 +112,10 @@ class Navigation extends React.Component {
                     duration: 300,
                     onComplete: (e) => {
                       if (this.state.phoneMenuOpen) {
-                        e.target.style.height = 'auto';
+                        e.target.style.height = "auto";
                       }
                     },
-                    ease: 'easeInOutQuad',
+                    ease: "easeInOutQuad",
                   }
                 : null
             }
@@ -124,8 +123,8 @@ class Navigation extends React.Component {
             reverse={!!phoneMenuOpen}
           >
             <Menu
-              mode={isMobile ? 'inline' : 'horizontal'}
-              defaultSelectedKeys={['home']}
+              mode={isMobile ? "inline" : "horizontal"}
+              defaultSelectedKeys={["home"]}
               selectedKeys={[this.props.selected]}
               theme="light"
             >

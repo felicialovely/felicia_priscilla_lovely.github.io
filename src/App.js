@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { enquireScreen } from 'enquire-js';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
+import Contact from './pages/Contact';
 import './styles/index.less';
 
 let isMobile;
@@ -26,10 +27,11 @@ class App extends Component {
   render() {
     return (
       <Router>
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/profile" element={<Profile />} />
-          </Routes>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/profile" element={<Profile />} />
+          <Route exact path="/contact" element={<Contact />} />
+        </Routes>
       </Router>
     );
   }

@@ -1,15 +1,15 @@
 /* eslint no-undef: 0 */
 /* eslint arrow-parens: 0 */
-import React from 'react';
-import { enquireScreen } from 'enquire-js';
+import React from "react";
+import { enquireScreen } from "enquire-js";
 
-import Navigation from '@components/Navigation';
-import Banner from './components/Banner';
-import Intro from './components/Intro';
-import Knowledge from './components/Knowledge';
-import Portfolio from './components/Portfolio';
-import ContactMe from '@components/ContactMe';
-import Footer from '@components/Footer';
+import Navigation from "@components/Navigation";
+import Banner from "./components/Banner";
+import Intro from "./components/Intro";
+import Knowledge from "./components/Knowledge";
+import Portfolio from "./components/Portfolio";
+import ContactMe from "@components/ContactMe";
+import Footer from "@components/Footer";
 
 import {
   NavDataSource,
@@ -19,14 +19,14 @@ import {
   PortfolioDataSource,
   ContactDataSource,
   FooterDataSource,
-} from '../../libraries/data.source';
+} from "../../libraries/data.source";
 
 let isMobile;
 enquireScreen((b) => {
   isMobile = b;
 });
 
-const { location = {} } = typeof window !== 'undefined' ? window : {};
+const { location = {} } = typeof window !== "undefined" ? window : {};
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -52,7 +52,7 @@ export default class Home extends React.Component {
   }
 
   goToIntro = () => {
-    this.targetRef.current.scrollIntoView({ behavior: 'smooth' });
+    this.targetRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
   render() {

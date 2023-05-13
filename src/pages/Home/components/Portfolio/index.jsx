@@ -1,8 +1,8 @@
-import React from 'react';
-import { Row, Col } from 'antd';
-import { TweenOneGroup } from 'rc-tween-one';
-import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-import { getChildrenToRender } from '../../../../libraries/utils';
+import React from "react";
+import { Row, Col } from "antd";
+import { TweenOneGroup } from "rc-tween-one";
+import OverPack from "rc-scroll-anim/lib/ScrollOverPack";
+import { getChildrenToRender } from "../../../../libraries/utils";
 
 class Portfolio extends React.PureComponent {
   getChildrenToRender = (data) =>
@@ -41,12 +41,12 @@ class Portfolio extends React.PureComponent {
               component={Row}
               key="ul"
               enter={{
-                y: '+=30',
+                y: "+=30",
                 opacity: 0,
-                type: 'from',
-                ease: 'easeInOutQuad',
+                type: "from",
+                ease: "easeInOutQuad",
               }}
-              leave={{ y: '+=30', opacity: 0, ease: 'easeInOutQuad' }}
+              leave={{ y: "+=30", opacity: 0, ease: "easeInOutQuad" }}
               {...dataSource.block}
             >
               {childrenToRender}

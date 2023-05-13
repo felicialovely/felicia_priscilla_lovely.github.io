@@ -1,10 +1,10 @@
-import React from 'react';
-import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-import BannerAnim, { Element } from 'rc-banner-anim';
-import TweenOne from 'rc-tween-one';
-import QueueAnim from 'rc-queue-anim';
-import { getChildrenToRender } from '../../../libraries/utils';
-import 'rc-banner-anim/assets/index.css';
+import React from "react";
+import OverPack from "rc-scroll-anim/lib/ScrollOverPack";
+import BannerAnim, { Element } from "rc-banner-anim";
+import TweenOne from "rc-tween-one";
+import QueueAnim from "rc-queue-anim";
+import { getChildrenToRender } from "../../../libraries/utils";
+import "rc-banner-anim/assets/index.css";
 
 class ProfileIntro extends React.PureComponent {
   getChildrenToRender = (children) => {
@@ -17,7 +17,7 @@ class ProfileIntro extends React.PureComponent {
           prefixCls={elementPros.className}
         >
           <QueueAnim
-            type={['bottom', 'top']}
+            type={["bottom", "top"]}
             delay={200}
             key="text"
             {...titleWrapper}
@@ -42,16 +42,16 @@ class ProfileIntro extends React.PureComponent {
             animation={
               isMobile
                 ? {
-                    scaleY: '+=0.3',
+                    scaleY: "+=0.3",
                     opacity: 0,
-                    type: 'from',
-                    ease: 'easeOutQuad',
+                    type: "from",
+                    ease: "easeOutQuad",
                   }
                 : {
-                    y: '+=30',
+                    y: "+=30",
                     opacity: 0,
-                    type: 'from',
-                    ease: 'easeOutQuad',
+                    type: "from",
+                    ease: "easeOutQuad",
                   }
             }
             resetStyle

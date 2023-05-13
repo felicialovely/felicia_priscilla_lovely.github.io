@@ -466,6 +466,12 @@ export const FooterDataSource = {
         className: 'links-item',
         children: 'InstagramOutlined'
       },
+      {
+        name: 'email',
+        href: 'mailto:feliciapriscillalovely.fpl@gmail.com',
+        className: 'links-item',
+        children: 'MailOutlined'
+      },
     ],
   },
 };
@@ -613,7 +619,7 @@ export const WorkingExperienceDataSource = {
           title: { className: 'block-title', children: 'Jun 2019 - Sep 2019' },
           content: { className: 'block-content', children: 'Building web application using PHP and Javascript' },
         },
-      },      
+      },
     ],
   },
 };

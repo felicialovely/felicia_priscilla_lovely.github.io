@@ -1,8 +1,8 @@
-import React from 'react';
-import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-import QueueAnim from 'rc-queue-anim';
-import { getChildrenToRender } from '../../../libraries/utils';
-import { BorderOutlined } from '@ant-design/icons';
+import React from "react";
+import OverPack from "rc-scroll-anim/lib/ScrollOverPack";
+import QueueAnim from "rc-queue-anim";
+import { getChildrenToRender } from "../../../libraries/utils";
+import { BorderOutlined } from "@ant-design/icons";
 
 class WorkingExperience extends React.PureComponent {
   getBlockChildren = (block, i) => {
@@ -19,7 +19,7 @@ class WorkingExperience extends React.PureComponent {
           {item.time.children}
         </div>
         <h2 key="title" {...item.title}>
-          <BorderOutlined className='block-icon' />
+          <BorderOutlined className="block-icon" />
           {item.title.children}
         </h2>
         <div key="p" {...item.content}>
@@ -33,7 +33,7 @@ class WorkingExperience extends React.PureComponent {
         <QueueAnim
           className="image-wrapper"
           key="image"
-          type={isMobile ? 'right' : 'bottom'}
+          type={isMobile ? "right" : "bottom"}
           leaveReverse
           delay={isMobile ? [100, 0] : 0}
           {...item.imgWrapper}

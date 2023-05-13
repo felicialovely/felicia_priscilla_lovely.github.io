@@ -4,18 +4,10 @@ import React from "react";
 import { enquireScreen } from "enquire-js";
 
 import Navigation from "@components/Navigation";
-import ProfileIntro from "./components/ProfileIntro";
-import WorkingExperience from "./components/WorkingExperience";
-import ContactMe from "@components/ContactMe";
+import ContactForm from "./components/ContactForm";
 import Footer from "@components/Footer";
 
-import {
-  NavDataSource,
-  ProfileDataSource,
-  WorkingExperienceDataSource,
-  ContactDataSource,
-  FooterDataSource,
-} from "../../libraries/data.source";
+import { NavDataSource, FooterDataSource } from "../../libraries/data.source";
 
 let isMobile;
 enquireScreen((b) => {
@@ -24,7 +16,7 @@ enquireScreen((b) => {
 
 const { location = {} } = typeof window !== "undefined" ? window : {};
 
-export default class Profile extends React.Component {
+export default class Contact extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -55,24 +47,7 @@ export default class Profile extends React.Component {
         selected="profile"
         isMobile={this.state.isMobile}
       />,
-      <ProfileIntro
-        id="profile"
-        key="profile"
-        dataSource={ProfileDataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <WorkingExperience
-        id="working-experience"
-        key="working-experience"
-        dataSource={WorkingExperienceDataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <ContactMe
-        id="contact-me"
-        key="contact-me"
-        dataSource={ContactDataSource}
-        isMobile={this.state.isMobile}
-      />,
+      <ContactForm />,
       <Footer
         id="footer"
         key="footer"
