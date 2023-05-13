@@ -531,11 +531,6 @@ export const WorkingExperienceDataSource = {
             children:
               './assets/working-experience-logo/logo-shopee.png',
           },
-          icon: {
-            className: 'block-icon',
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/agOOBdKEIJlQhfeYhHJc.svg',
-          },
           name: { className: 'block-name', children: 'Front End Engineer' },
           post: { className: 'block-post', children: 'Shopee Indonesia' },
           time: { className: 'block-time', children: '' },
@@ -554,11 +549,6 @@ export const WorkingExperienceDataSource = {
             className: 'block-img',
             children:
               './assets/working-experience-logo/logo-nexsoft.jpg',
-          },
-          icon: {
-            className: 'block-icon',
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/agOOBdKEIJlQhfeYhHJc.svg',
           },
           name: { className: 'block-name', children: 'Front End Developer' },
           post: { className: 'block-post', children: 'PT. Paramadaksa Teknologi Nusantara / Nexsoft' },
@@ -579,11 +569,6 @@ export const WorkingExperienceDataSource = {
             children:
               './assets/working-experience-logo/logo-nexsoft.jpg',
           },
-          icon: {
-            className: 'block-icon',
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/QviGtUPvTFxdhsTUAacr.svg',
-          },
           name: { className: 'block-name', children: 'Back End Developer' },
           post: { className: 'block-post', children: 'PT. Paramadaksa Teknologi Nusantara / Nexsoft' },
           time: { className: 'block-time', children: '' },
@@ -603,11 +588,6 @@ export const WorkingExperienceDataSource = {
             children:
               './assets/working-experience-logo/logo-nexsoft.jpg',
           },
-          icon: {
-            className: 'block-icon',
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/QviGtUPvTFxdhsTUAacr.svg',
-          },
           name: { className: 'block-name', children: 'Full Stack Developer' },
           post: { className: 'block-post', children: 'PT. Paramadaksa Teknologi Nusantara / Nexsoft' },
           time: { className: 'block-time', children: '' },
@@ -626,11 +606,6 @@ export const WorkingExperienceDataSource = {
             className: 'block-img',
             children:
               './assets/working-experience-logo/logo-winning-soft.jpg',
-          },
-          icon: {
-            className: 'block-icon',
-            children:
-              'https://gw.alipayobjects.com/zos/rmsportal/qJnGrvjXPxdKETlVSrbe.svg',
           },
           name: { className: 'block-name', children: 'Full Stack Developer Intern' },
           post: { className: 'block-post', children: 'PT. Datacaraka Solusindo' },
