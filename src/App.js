@@ -25,9 +25,7 @@ class App extends Component {
     });
   }
   render() {
-    if (window.location.hostname === 'github.io') window.location.href = 'https://www.felicialovely.netlify.app';
-
-    console.log('tes', window.location.hostname);
+    if (window.location.hostname === 'felicialovely.github.io') window.location.href = 'https://www.felicialovely.netlify.app';
 
     return (
       <Router>
