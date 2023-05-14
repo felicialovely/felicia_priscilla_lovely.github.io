@@ -1,5 +1,6 @@
 {
   "name": "personal-website",
+  "homepage": "https://felicialovely.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -27,7 +28,9 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "test": "react-app-rewired test"
+    "test": "react-app-rewired test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -48,6 +51,7 @@
     ]
   },
   "devDependencies": {
-    "babel-plugin-import": "^1.13.6"
+    "babel-plugin-import": "^1.13.6",
+    "gh-pages": "^5.0.0"
   }
 }
