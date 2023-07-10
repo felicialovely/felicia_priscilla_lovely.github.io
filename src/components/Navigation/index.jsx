@@ -9,13 +9,13 @@ class Navigation extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      phoneMenuOpen: undefined,
+      phoneMenuOpen: false,
     };
   }
 
   phoneMenuClick = () => {
     this.setState({
-      phoneMenuOpen: !this.state.phoneMenuOpen
+      phoneMenuOpen: !this.state.phoneMenuOpen,
     });
   };
 
@@ -66,8 +66,6 @@ class Navigation extends React.Component {
       );
     });
 
-    const moment = phoneMenuOpen === undefined ? 300 : null;
-
     return (
       <TweenOne
         component="header"
@@ -101,26 +99,7 @@ class Navigation extends React.Component {
               <em />
             </div>
           )}
-          <TweenOne
-            {...dataSource.menu}
-            animation={
-              isMobile
-                ? {
-                    x: 0,
-                    height: 0,
-                    duration: 300,
-                    onComplete: (e) => {
-                      if (this.state.phoneMenuOpen) {
-                        e.target.style.height = "auto";
-                      }
-                    },
-                    ease: "easeInOutQuad",
-                  }
-                : null
-            }
-            moment={moment}
-            reverse={!!phoneMenuOpen}
-          >
+          <TweenOne {...dataSource.menu} className={phoneMenuOpen ? `${dataSource.menu.className} open` : dataSource.menu.className}>
             <Menu
               mode={isMobile ? "inline" : "horizontal"}
               defaultSelectedKeys={["home"]}
